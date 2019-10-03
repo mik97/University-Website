@@ -3,7 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* background-image: url("../immagini/camerino.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #f3f2f5;
 }
 
 .App-header {
@@ -20,3 +23,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+/* .home {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+} */

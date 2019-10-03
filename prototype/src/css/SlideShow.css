@@ -1,0 +1,25 @@
+.item-image {
+  width: inherit;
+}
+
+.carousel-control-prev-icon {
+  height: 10%;
+  width: 25%;
+  outline: black;
+  background-image: url("../immagini/arrowLeft.png");
+}
+
+.carousel-control-next-icon {
+  height: 10%;
+  width: 25%;
+  outline: black;
+  background-image: url("../immagini/arrowRight.png");
+}
+
+.carousel-control-next-icon:after {
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  color: red;
+}

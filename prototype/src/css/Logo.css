@@ -1,0 +1,18 @@
+.container-fluid {
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.logo {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.paths {
+  text-align: right;
+}
