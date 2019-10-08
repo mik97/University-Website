@@ -1,0 +1,30 @@
+.containerFooter {
+  font-family: "Segoe UI", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 13px;
+  margin-left: 70px;
+}
+
+.navslinkfooter {
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.navslinkfooter:hover {
+  color: gray;
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.contatti {
+  color: white;
+  margin-top: 10px;
+}

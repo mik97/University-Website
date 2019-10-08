@@ -1,15 +1,14 @@
 import React from "react";
 import { Tab, Row, Nav, Col } from "react-bootstrap";
 import "../css/Tabs.css";
-import "bootstrap/dist/css/bootstrap.css";
-
+import Cards from "./Cards";
 class Tabs extends React.Component {
   render() {
     return (
-      <Tab.Container defaultActiveKey="eventi">
-        <Row>
-          <Col className="column">
-            <Nav variant="pills" className="navs">
+      <Tab.Container id="uncontrolled-tab-example" defaultActiveKey="eventi">
+        <Row className="first-row">
+          <Col className="first">
+            <Nav variant="pills">
               <Nav.Item>
                 <Nav.Link className="navsLink" eventKey="eventi">
                   Eventi
@@ -17,21 +16,25 @@ class Tabs extends React.Component {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col className="column">
+          <Col className="second">
             <Nav variant="pills">
               <Nav.Item>
-                <Nav.Link eventKey="avvisi" className="navsLink">
+                <Nav.Link className="navsLink" eventKey="avvisi">
                   Avvisi
                 </Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
         </Row>
-        <Row>
+        <Row className="second-row">
           <Col>
-            <Tab.Content>
-              <Tab.Pane eventKey="eventi">A</Tab.Pane>
-              <Tab.Pane eventKey="avvisi">B</Tab.Pane>
+            <Tab.Content className="content">
+              <Tab.Pane eventKey="eventi">
+                <Cards type={"Evento"} />
+              </Tab.Pane>
+              <Tab.Pane eventKey="avvisi">
+                <Cards type={"Avviso"} />
+              </Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>

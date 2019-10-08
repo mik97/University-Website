@@ -1,0 +1,9 @@
+.blueButton {
+  background-color: #1b3b5d;
+  border: #1b3b5d;
+}
+
+.blueButton:focus,
+.blueButton:hover {
+  background-color: #1b3b5dd5;
+}

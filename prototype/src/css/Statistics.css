@@ -1,0 +1,24 @@
+.firstTitle {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #1b3b5d;
+}
+
+.secondValue {
+  text-align: center;
+  margin-top: 20px;
+  color: #1b3b5d;
+}
+
+.thirdInfo {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  color: #1b3b5d;
+}
+
+.containerStatistics {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}

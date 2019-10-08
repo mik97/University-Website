@@ -11,7 +11,9 @@ class Logo extends React.Component {
       <Container fluid style={{ paddingLeft: 0, paddingRight: 20 }}>
         <Row>
           <Col className="logo">
-            <Image className="logo" src={newLogo} alt="newLogo" />
+            <a href="http://localhost:3000/">
+              <Image className="logo" src={newLogo} alt="newLogo" />
+            </a>
           </Col>
           <Col className="paths">
             <Profiles />

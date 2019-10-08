@@ -1,0 +1,23 @@
+.navslinkheader {
+  color: white;
+  margin-right: 5px;
+}
+
+.navslinkheader:hover {
+  color: gray;
+}
+
+.containerHeader {
+  margin-left: 45px;
+}
+
+.social {
+  color: white;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.socials {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
