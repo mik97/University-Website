@@ -2,103 +2,60 @@ import React from "react";
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
 import "../css/Sections.css";
 
-class Sections extends React.Component {
+interface ISectionsProps {
+  ateneo: String[];
+  didattica: String[];
+  ricerca: String[];
+  imprese: String[];
+  servizi: String[];
+}
+
+interface ISectionsState {
+  future?: boolean;
+}
+
+class Sections extends React.Component<ISectionsProps, ISectionsState> {
+  constructor(props?: any) {
+    super(props);
+  }
+
+  getContent(arr: String[]) {
+    let text;
+
+    if (arr !== undefined) {
+      text = arr.map((t, index) => {
+        return <NavDropdown.Item key={"a" + index}>{t}</NavDropdown.Item>;
+      });
+    }
+
+    return text;
+  }
+
+  isEmpty(arr: String[], title: string) {
+    if (arr.length > 0) {
+      return (
+        <NavDropdown
+          style={{ paddingLeft: 50, paddingRight: 50 }}
+          title={title}
+          id="basic-nav-dropdown"
+        >
+          {this.getContent(arr)}
+        </NavDropdown>
+      );
+    }
+  }
+
   render() {
     return (
       <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
         <Navbar variant="dark" bg="blue">
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <NavDropdown
-                style={{ paddingLeft: 50, paddingRight: 50 }}
-                title="Ateneo"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Storia</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Governance
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Strutture
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  Rapporto con il territorio
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">
-                  Iniziative
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">
-                  Calendario Accademico
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                style={{ paddingRight: 50 }}
-                title="Didattica"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                style={{ paddingRight: 50 }}
-                title="Ricerca"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                style={{ paddingRight: 50 }}
-                title="Imprese e territorio"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                style={{ paddingRight: 50 }}
-                title="Servizi e opportunità"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              {this.isEmpty(this.props.ateneo, "Ateneo")}
+              {this.isEmpty(this.props.didattica, "Didattica")}
+              {this.isEmpty(this.props.ricerca, "Ricerca")}
+              {this.isEmpty(this.props.imprese, "Imprese e Territorio")}
+              {this.isEmpty(this.props.servizi, "Servizi e Opportunità")}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

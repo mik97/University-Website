@@ -1,6 +1,8 @@
 .navslinkheader {
   color: white;
+  margin-top: 10px;
   margin-right: 5px;
+  font-size: 14px;
 }
 
 .navslinkheader:hover {
@@ -9,11 +11,13 @@
 
 .containerHeader {
   margin-left: 45px;
+  padding-right: 70px;
 }
 
 .social {
   color: white;
   margin-top: 8px;
+  font-size: 14px;
   text-align: right;
 }
 

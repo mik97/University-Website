@@ -10,14 +10,12 @@ import linkedin from "../immagini/linkedin.png";
 class Header extends React.Component {
   render() {
     return (
-      <Container className="containerHeader">
+      <Container fluid className="containerHeader">
         <Row>
           <Col>
             <Nav>
               <Nav.Item>
-                <Nav.Link className="navslinkheader" href="/home">
-                  Orari
-                </Nav.Link>
+                <Nav.Link className="navslinkheader">Orari</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link className="navslinkheader" eventKey="link-1">
