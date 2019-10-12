@@ -3,11 +3,7 @@ import { Card, CardDeck, Button } from "react-bootstrap";
 // import "bootstrap/dist/css/bootstrap.css";
 import "../css/Cards.css";
 
-interface CardsProps {
-  type: "Evento" | "Avviso";
-}
-
-class Cards extends React.Component<CardsProps> {
+class Cards extends React.Component {
   render() {
     return (
       <CardDeck>
