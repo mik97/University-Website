@@ -9,6 +9,8 @@
   line-height: 1.2;
   font-size: 18px;
   margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 /* .navbar-dark .navbar-text {
@@ -17,6 +19,8 @@
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,

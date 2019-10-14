@@ -6,17 +6,6 @@ import { Container, Col, Row } from "react-bootstrap";
 import Profiles from "./Profiles";
 
 class Logo extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { arr: null };
-    this.setContents = this.setContents.bind(this);
-  }
-
-  setContents(at, did, ric, imp, serv) {
-    this.props.onChange(at, did, ric, imp, serv);
-  }
-
   render() {
     return (
       <Container fluid style={{ paddingLeft: 0, paddingRight: 20 }}>
@@ -27,8 +16,7 @@ class Logo extends React.Component {
             </a>
           </Col>
           <Col className="paths">
-            {/* {this.props.onChange(at)} */}
-            <Profiles setContents={this.setContents} />
+            <Profiles />
           </Col>
         </Row>
       </Container>

@@ -1,0 +1,27 @@
+{
+  "at": [
+    "Regolamento",
+    "Calendario Accademico",
+    "Strutture",
+    "Guida dello studente"
+  ],
+
+  "did": [
+    "Offerta formativa",
+    "Regolamenti didattici",
+    "Verifica della preparazione iniziale",
+    "Servizi a supporto della didattica"
+  ],
+  "ric": [],
+  "imp": ["Stage e placement"],
+  "serv": [
+    "Servizi di segreteria",
+    "Servizi online",
+    "Borse di studio e Agevolazioni",
+    "Internazionale",
+    "Disabilità e DSA",
+    "Vivere la città",
+    "Associazioni e tempo libero",
+    "Servizi consulenza psicologica"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "at": [
+    "Governance",
+    "Diario Rettore",
+    "Amministrazione",
+    "Strutture",
+    "Calendario Accademico",
+    "Normativa"
+  ],
+
+  "did": ["Regolamenti didattici"],
+  "ric": [
+    "Progetti finanziati",
+    "Prodotti ricerca",
+    "Finanziamenti",
+    "Riviste scientifiche"
+  ],
+  "imp": [],
+  "serv": [
+    "Servizi online",
+    "Borse di studio e Agevolazioni",
+    "Disabilità e DSA",
+    "Internazionale"
+  ]
+}

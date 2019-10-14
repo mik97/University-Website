@@ -1,0 +1,39 @@
+{
+  "at": [
+    "Storia",
+    "Governance",
+    "Strutture",
+    "Rapporto con il territorio",
+    "Iniziative",
+    "Calendario Accademico"
+  ],
+
+  "did": ["Offerta Formativa", "Servizi didattica", "Scuole di Ateneo"],
+
+  "ric": [
+    "Dove fare ricerca",
+    "Finanziamenti",
+    "Portale ricercatori",
+    "Iris",
+    "Spin-off"
+  ],
+
+  "imp": [
+    "Rapporto con le imprese",
+    "Stage e Placement",
+    "Career Day",
+    "Curriculum Vitae Studenti",
+    "Start-up",
+    "Attività nel territorio"
+  ],
+
+  "serv": [
+    "Segreterie Studenti",
+    "Servizi Online",
+    "Borse di studio e Agevolazionire",
+    "Vivere l'università",
+    "Servizi per la mobilità internazionale",
+    "Utility",
+    "Come raggiungerci"
+  ]
+}

@@ -2,8 +2,6 @@ import React from "react";
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
 import "../css/Sections.css";
 
-// const array = [at, did, ric, imp, serv];
-
 class Sections extends React.Component {
   getContent(arr) {
     if (arr !== null) {
@@ -30,9 +28,8 @@ class Sections extends React.Component {
   }
 
   render() {
-    console.log("ok");
     return (
-      <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
+      <Container fluid>
         <Navbar variant="dark" bg="blue">
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">

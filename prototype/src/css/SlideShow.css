@@ -1,3 +1,7 @@
+.carouselSlideShow {
+  display: -webkit-box;
+}
+
 .item-image {
   width: inherit;
 }
