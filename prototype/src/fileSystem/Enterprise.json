@@ -19,5 +19,11 @@
   "serv": [
     "Uso aule e spazi per eventi",
     "Gare, concorsi e lavori in università"
+  ],
+  "row1": ["Mission", "Spin-off", "Rapporto con le imprese"],
+  "row2": [
+    "Stage e Placement",
+    "Career Day",
+    "Gare, concorsi e lavori in Università"
   ]
 }

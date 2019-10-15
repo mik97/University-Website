@@ -20,5 +20,7 @@
     ],
     "Borse di studio e Agevolazioni",
     ["Area Riservata", "Wi-Fi", "Rubrica", "Help Desk", "Servizi online"]
-  ]
+  ],
+  "row1": ["Strutture", "Albo Ufficiale", "Servizi amministrativi"],
+  "row2": ["Orari Lavoro", "Area Riservata", "Help Desk"]
 }

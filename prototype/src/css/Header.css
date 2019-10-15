@@ -1,3 +1,8 @@
+.divHeader {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .navslinkheader {
   color: white;
   margin-top: 10px;
@@ -9,9 +14,8 @@
   color: gray;
 }
 
-.containerHeader {
-  margin-left: 45px;
-  padding-right: 70px;
+.navHeader {
+  margin-left: 20px;
 }
 
 .social {
@@ -19,6 +23,7 @@
   margin-top: 8px;
   font-size: 14px;
   text-align: right;
+  margin-left: 640px;
 }
 
 .socials {

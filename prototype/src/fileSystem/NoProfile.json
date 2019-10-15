@@ -1,14 +1,25 @@
 {
   "at": [
     "Storia",
+    "Il sistema universitario",
     "Governance",
-    "Strutture",
+    "Mission",
+    "Amministrazione",
     "Rapporto con il territorio",
-    "Iniziative",
+    "Strutture",
+    ["Regolamento studenti", "Regolamento personale", "Regolamenti"],
+    "Guida dello studente",
+    "Diario Rettore",
+    "Normative",
+    "Albo ufficiale",
+    "Statistiche",
     "Calendario Accademico"
   ],
 
   "did": [
+    "Dipartimenti",
+    "Verifica della preparazione iniziale",
+    "Orientamento",
     [
       "Corsi di laurea triennale e magistrale",
       "Dottorati",
@@ -16,55 +27,96 @@
       "Master",
       "Corsi di perfezionamento",
       "Corsi di lingue",
+      "Formazione insegnamenti (PF24)",
       "Offerta formativa"
     ],
-    "Servizi didattica",
-    "Scuole di Ateneo"
+    "Regolamenti didattici",
+    ["E-learning", "Mooc", "Tutorato", "Servizi a supporto della didattica"]
   ],
 
   "ric": [
+    "Progetti finanziati",
     "Dove fare ricerca",
     "Finanziamenti",
     "Portale ricercatori",
-    "Iris",
-    "Spin-off"
+    "IRIS",
+    "Spin-off",
+    "Riviste scientifiche"
   ],
 
   "imp": [
     "Rapporto con le imprese",
+    "Eventi",
     "Stage e Placement",
     "Career Day",
-    "Curriculum Vitae Studenti",
-    "Start-up",
-    "Attività nel territorio"
+    "Start-up"
   ],
 
   "serv": [
     [
-      "Iscrizioni e Immatricolazioni",
-      "Modulistica",
-      "Tasse ed esoneri",
-      "Decadenza, rinuncia e interruzione degli studi",
-      "Trasferimenti",
+      [
+        "Iscrizioni standard",
+        "Iscrizioni a tempo parziale",
+        "Iscrizioni a singoli insegnamenti",
+        "Trasferimento da altra Università",
+        "Riconoscimento carriera pregressa",
+        "RIconoscimento studi ed esami all'estero",
+        "Iscrizioni e Immatricolazioni"
+      ],
+      "Rinnovo iscrizioni",
+      "Autocertificazioni e certificati",
+      "Tasse e contributi",
+      "Trasferimento da/a altro corso",
+      "Rinuncia e sospensione studi",
+      "Ritiro pergamene",
       "Esami di profitto e di laurea",
       "Esami di stato",
-      "Segreteria Studenti"
+      "FAQ",
+      "Contatti",
+      "Segreterie studenti"
     ],
-    "Servizi Online",
-    "Borse di studio e Agevolazionire",
-    "Vivere l'università",
-    "Servizi per la mobilità internazionale",
-    "Utility",
+    [
+      "Portale Didattica",
+      "Posta elettronica di Ateneo",
+      "Wi-Fi",
+      "Utility",
+      "Rubrica",
+      "Portale Docenti",
+      "ALUMNI",
+      "Area Riservata",
+      "Help Desk",
+      "Servizi Online"
+    ],
+    "Elezioni studentesche",
+    "Disabilità e DSA",
+    "Associazioni e tempo libero",
+    [
+      "Programma mobilità",
+      "Bandi di mobilità",
+      "Tutorato e supporto alla mobilità",
+      "Stipulare e gestire accordi",
+      "Internazionale"
+    ],
+    "Borse di studio e Agevolazioni",
+    ["Tirocinio post-laurea", "Almalaurea", "Orientamento in uscita"],
+    [
+      "Agevolazioni culturali/sportive",
+      "Residenze, mense e punti ristoro",
+      "Trovare alloggio",
+      "Trasporti",
+      "Territorio",
+      "Salute e assistenza sanitaria",
+      "Vivere la città"
+    ],
+    "Servizio consulenza psicologica",
+    [
+      "Associazioni sindacali",
+      "Orario lavoro",
+      "Servizi amministrativi",
+      "Rapporto di lavoro"
+    ],
+    "Uso aule e spazi per eventi",
+    "Gare, concorsi e lavori in università",
     "Come raggiungerci"
-  ],
-
-  "segereteria": [
-    "Iscrizioni e Immatricolazioni",
-    "Modulistica",
-    "Tasse ed esoneri",
-    "Decadenza, rinuncia e interruzione degli studi",
-    "Trasferimenti",
-    "Esami di profitto e di laurea",
-    "Esami di stato"
   ]
 }

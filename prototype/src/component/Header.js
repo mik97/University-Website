@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Header.css";
-import { Container, Nav, Row, Col, Image } from "react-bootstrap";
+import { Nav, Image } from "react-bootstrap";
 import facebook from "../immagini/facebook.png";
 import instagram from "../immagini/instagram.png";
 import twitter from "../immagini/twitter.png";
@@ -10,36 +10,34 @@ import linkedin from "../immagini/linkedin.png";
 class Header extends React.Component {
   render() {
     return (
-      <Container fluid className="containerHeader">
-        <Row>
-          <Col>
-            <Nav>
-              <Nav.Item>
-                <Nav.Link className="navslinkheader">Orari</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className="navslinkheader" eventKey="link-1">
-                  Rubrica
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className="navslinkheader" eventKey="link-2">
-                  Help Desk
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className="navslinkheader" eventKey="link-3">
-                  Portale didattica
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link className="navslinkheader" eventKey="link-4">
-                  Strutture
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Col>
-          <Col className="social">
+      <div className="divHeader">
+        {/* <Row>
+          <Col> */}
+        <Nav className="navHeader">
+          <Nav.Item>
+            <Nav.Link className="navslinkheader">Orari</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="navslinkheader" eventKey="link-1">
+              Rubrica
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="navslinkheader" eventKey="link-2">
+              Help Desk
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="navslinkheader" eventKey="link-3">
+              Portale didattica
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="navslinkheader" eventKey="link-4">
+              Strutture
+            </Nav.Link>
+          </Nav.Item>
+          <div className="social">
             Seguici su
             <a href="https://www.facebook.com/universitacamerino">
               <Image
@@ -86,9 +84,14 @@ class Header extends React.Component {
                 height="35"
               />
             </a>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </Nav>
+        {/* </Col>
+          <Col className="social"> */}
+
+        {/* </Col>
+        </Row> */}
+      </div>
     );
   }
 }

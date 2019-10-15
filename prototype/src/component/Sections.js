@@ -9,24 +9,29 @@ import {
 import "../css/Sections.css";
 
 class Sections extends React.Component {
-  getContent(arr) {
+  getContent(arr, title) {
     if (arr !== null) {
       return arr.map((el, index) => {
         if (el instanceof Array) {
+          const t = el.pop();
           return (
             <DropdownButton
               drop={"right"}
               variant="custom"
-              title={el.pop()}
+              title={t}
               id="dropdown-button-drop-right"
-              key={"right"}
+              key={"right" + index}
             >
-              {this.getContent(el)}
+              {this.getContent(el, title + "/" + t)}
             </DropdownButton>
           );
         }
 
-        return <NavDropdown.Item key={"a" + index}>{el}</NavDropdown.Item>;
+        return (
+          <NavDropdown.Item href={"/" + title} key={"a" + index}>
+            {el}
+          </NavDropdown.Item>
+        );
       });
     }
     return;
@@ -40,7 +45,7 @@ class Sections extends React.Component {
           title={title}
           id="basic-nav-dropdown"
         >
-          {this.getContent(arr)}
+          {this.getContent(arr, title)}
         </NavDropdown>
       );
     }

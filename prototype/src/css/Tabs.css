@@ -14,26 +14,26 @@
 }
 
 .first {
-  padding-right: 0px;
-  padding-left: 80px;
+  padding-right: auto;
+  padding-left: auto;
   margin-left: 600px;
 }
 
 .second {
-  padding-right: 50px;
-  padding-left: 0px;
+  padding-right: auto;
+  padding-left: auto;
   margin-right: 600px;
 }
 
 .first-row {
   margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .second-row {
-  display: flex;
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 20px;
-  width: inherit;
   margin-bottom: 50px;
 }

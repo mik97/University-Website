@@ -37,5 +37,7 @@
       "Bandi e concorsi",
       "Internazionale"
     ]
-  ]
+  ],
+  "row1": ["Calendario Accademico", "Dipartimenti", "IRIS"],
+  "row2": ["Portale didattica", "Portale docenti", "Bandi e Concorsi"]
 }

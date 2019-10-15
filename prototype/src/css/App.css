@@ -1,9 +1,11 @@
 .main {
   background-color: #f3f2f5;
+  padding-left: 0px;
 }
 
 .App-header {
   background-color: #1b3b5d;
+  resize: inherit;
 }
 
 .App {
@@ -21,9 +23,5 @@
 }
 
 .home {
-  /* margin-left: 0px;
-  margin-right: 0px;
-  padding-right: 0px;
-  padding-left: 0px; */
   padding-bottom: 100px;
 }
