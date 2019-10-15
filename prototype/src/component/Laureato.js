@@ -13,6 +13,9 @@ class Laureato extends React.Component {
             ric={Graduate.ric}
             imp={Graduate.imp}
             serv={Graduate.serv}
+            name={"Laureato"}
+            cName={"graduated"}
+            activate={false}
           />
         </div>
       </div>

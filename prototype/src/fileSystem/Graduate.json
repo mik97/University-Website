@@ -1,8 +1,29 @@
 {
   "at": [],
 
-  "did": ["Offerta formativa"],
+  "did": [
+    [
+      "Corsi di laurea triennale e magistrale",
+      "Dottorati",
+      "Scuole di Specializzazione",
+      "Master",
+      "Corsi di perfezionamento",
+      "Corsi di lingue",
+      "Offerta formativa",
+      "Formazione Insegnanti (PF24)"
+    ]
+  ],
   "ric": [],
   "imp": [],
-  "serv": ["Orientamento in usicta", "Servizi di segreteria", "Servizi online"]
+  "serv": [
+    ["Tirocinio post-laurea", "Almalaurea", "Orientamento in usicta"],
+    [
+      "Esame di stato",
+      "Autocertificazioni e certificati",
+      "Tasse e contributi",
+      "Ritiro pergamene",
+      "Servizi di segreteria"
+    ],
+    ["ALUMNI", "Servizi online"]
+  ]
 }

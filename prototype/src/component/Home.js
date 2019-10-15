@@ -17,6 +17,8 @@ class Home extends React.Component {
             ric={NoProfile.ric}
             imp={NoProfile.imp}
             serv={NoProfile.serv}
+            cName={"noprofile"}
+            activate={true}
           />
         </div>
         <div className="slideShow">

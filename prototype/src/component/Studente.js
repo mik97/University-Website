@@ -13,6 +13,9 @@ class Studente extends React.Component {
             ric={Student.ric}
             imp={Student.imp}
             serv={Student.serv}
+            name={"Studente"}
+            cName={"student"}
+            activate={false}
           />
         </div>
       </div>

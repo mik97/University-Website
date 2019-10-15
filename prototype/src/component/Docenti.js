@@ -13,6 +13,9 @@ class Docenti extends React.Component {
             ric={Professor.ric}
             imp={Professor.imp}
             serv={Professor.serv}
+            name={"Docenti o Ricercatori"}
+            cName={"professor"}
+            activate={false}
           />
         </div>
       </div>

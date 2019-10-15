@@ -1,14 +1,35 @@
 import React from "react";
-import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
+import {
+  Navbar,
+  NavDropdown,
+  Nav,
+  Container,
+  DropdownButton
+} from "react-bootstrap";
 import "../css/Sections.css";
 
 class Sections extends React.Component {
   getContent(arr) {
     if (arr !== null) {
       return arr.map((el, index) => {
+        if (el instanceof Array) {
+          return (
+            <DropdownButton
+              drop={"right"}
+              variant="custom"
+              title={el.pop()}
+              id="dropdown-button-drop-right"
+              key={"right"}
+            >
+              {this.getContent(el)}
+            </DropdownButton>
+          );
+        }
+
         return <NavDropdown.Item key={"a" + index}>{el}</NavDropdown.Item>;
       });
     }
+    return;
   }
 
   chooseContents(arr, title) {
@@ -29,7 +50,7 @@ class Sections extends React.Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container fluid className={this.props.cName}>
         <Navbar variant="dark" bg="blue">
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -39,6 +60,7 @@ class Sections extends React.Component {
               {this.chooseContents(this.props.imp, "Imprese e Territorio")}
               {this.chooseContents(this.props.serv, "Servizi e Opportunità")}
             </Nav>
+            <div hidden={this.props.activate}>{this.props.name}</div>
           </Navbar.Collapse>
         </Navbar>
       </Container>

@@ -2,17 +2,42 @@
   "at": ["Il sistema universitario", "Guida dello studente", "Strutture"],
 
   "did": [
+    [
+      "Corsi di laurea triennale e magistrale",
+      "Dottorati",
+      "Scuole di Specializzazione",
+      "Master",
+      "Corsi di perfezionamento",
+      "Corsi di lingue",
+      "Offerta formativa"
+    ],
     "Verifica della preparazione iniziale",
-    "Orientamento",
-    "Offerta formativa"
+    "Orientamento"
   ],
   "ric": [],
   "imp": [],
   "serv": [
-    "Immatricolazioni",
+    [
+      "Iscrizioni Standard",
+      "Iscrizioni a tempo parziale",
+      "Iscrizioni a singoli insegnamenti",
+      "Trasferimento da altra Univeristà",
+      "Riconoscimento carriera pregressa",
+      "Riconoscimento studi all'estero",
+      "Tasse e contributi",
+      "Immatricolazioni"
+    ],
     "Disabilità e DSA",
     "Borse di studio e Agevolazioni",
-    "Vivere la città",
+    [
+      "Agevolazioni per attività culturali e sportive",
+      "Residenze, mense e punti ristoro",
+      "Trovare alloggio",
+      "Trasporti",
+      "Territorio",
+      "Salute e assistenza sanitaria",
+      "Vivere la città"
+    ],
     "Associazioni e tempo libero",
     "Servizi online",
     "Come raggiungerci"

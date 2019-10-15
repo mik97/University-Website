@@ -7,20 +7,57 @@
   ],
 
   "did": [
-    "Offerta formativa",
+    [
+      "Corsi di laurea triennale e magistrale",
+      "Dottorati",
+      "Scuole di Specializzazione",
+      "Master",
+      "Corsi di perfezionamento",
+      "Corsi di lingue",
+      "Offerta formativa"
+    ],
     "Regolamenti didattici",
     "Verifica della preparazione iniziale",
-    "Servizi a supporto della didattica"
+    ["E-learning", "Mooc", "Tutorato", "Servizi a supporto della didattica"]
   ],
   "ric": [],
   "imp": ["Stage e placement"],
   "serv": [
-    "Servizi di segreteria",
-    "Servizi online",
+    [
+      "Rinnovo iscrizioni",
+      "Tasse e contributi",
+      "Autocertificazioni e certificati",
+      "Trasferimenti",
+      "Rinuncia e sospensioni studi",
+      "Laurearsi",
+      "Riconoscimento studi all'estero",
+      "FAQ",
+      "Contatti",
+      "Servizi di segreteria"
+    ],
+    [
+      "Portale didattica",
+      "Posta elettronica di Ateneo",
+      "Wi-Fi",
+      "Utility",
+      "Rubrica",
+      "Servizi online"
+    ],
     "Borse di studio e Agevolazioni",
-    "Internazionale",
+    [
+      "Programma mobilità internazionale",
+      "Bandi mobilità internazionale",
+      "Internazionale"
+    ],
     "Disabilità e DSA",
-    "Vivere la città",
+    [
+      "Agevolazioni per attività culturali e sportive",
+      "Residenze, mense e punti ristoro",
+      "Trasporti",
+      "Territorio",
+      "Salute e assistenza sanitaria",
+      "Vivere la città"
+    ],
     "Associazioni e tempo libero",
     "Servizi consulenza psicologica"
   ]

@@ -8,7 +8,19 @@
     "Calendario Accademico"
   ],
 
-  "did": ["Offerta Formativa", "Servizi didattica", "Scuole di Ateneo"],
+  "did": [
+    [
+      "Corsi di laurea triennale e magistrale",
+      "Dottorati",
+      "Scuole di Specializzazione",
+      "Master",
+      "Corsi di perfezionamento",
+      "Corsi di lingue",
+      "Offerta formativa"
+    ],
+    "Servizi didattica",
+    "Scuole di Ateneo"
+  ],
 
   "ric": [
     "Dove fare ricerca",
@@ -28,12 +40,31 @@
   ],
 
   "serv": [
-    "Segreterie Studenti",
+    [
+      "Iscrizioni e Immatricolazioni",
+      "Modulistica",
+      "Tasse ed esoneri",
+      "Decadenza, rinuncia e interruzione degli studi",
+      "Trasferimenti",
+      "Esami di profitto e di laurea",
+      "Esami di stato",
+      "Segreteria Studenti"
+    ],
     "Servizi Online",
     "Borse di studio e Agevolazionire",
     "Vivere l'università",
     "Servizi per la mobilità internazionale",
     "Utility",
     "Come raggiungerci"
+  ],
+
+  "segereteria": [
+    "Iscrizioni e Immatricolazioni",
+    "Modulistica",
+    "Tasse ed esoneri",
+    "Decadenza, rinuncia e interruzione degli studi",
+    "Trasferimenti",
+    "Esami di profitto e di laurea",
+    "Esami di stato"
   ]
 }

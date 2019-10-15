@@ -1,3 +1,52 @@
 .profiles {
   margin-top: 30px;
 }
+
+a.btn.btn-future {
+  padding-left: 10px;
+  color: white;
+  background-color: #dc3545;
+}
+
+a.btn.btn-student {
+  padding-left: 10px;
+  padding-top: 17px;
+  color: white;
+  background-color: #f1b40e;
+}
+
+a.btn.btn-graduate {
+  padding-left: 10px;
+  text-align: center;
+  padding-top: 17px;
+  color: white;
+  background-color: #37910d;
+}
+
+a.btn.btn-professor {
+  padding-left: 10px;
+  text-align: center;
+  color: white;
+  background-color: #1b5394;
+}
+
+a.btn.btn-staff {
+  padding-left: 10px;
+  text-align: center;
+  color: white;
+  background-color: #5c3294;
+}
+
+a.btn.btn-enterprise {
+  padding-left: 10px;
+  text-align: center;
+  color: white;
+  background-color: #8f3064;
+}
+
+.btn.btn-international {
+  padding-left: 10px;
+  text-align: center;
+  color: white;
+  background-color: #ffd341;
+}

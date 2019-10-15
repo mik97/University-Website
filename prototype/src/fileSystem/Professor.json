@@ -17,9 +17,25 @@
   ],
   "imp": [],
   "serv": [
-    "Servizi online",
+    [
+      "Portale Didattica",
+      "Portale Docenti",
+      "Posta elettronica di Ateneo",
+      "IRIS",
+      "Wi-Fi",
+      "Rubrica",
+      "Utility",
+      "Help Desk",
+      "Servizi online"
+    ],
     "Borse di studio e Agevolazioni",
     "Disabilità e DSA",
-    "Internazionale"
+    [
+      "Programma di mobilità internazionle",
+      "Stipulare e gestire accordi",
+      "Tutorato e supporto alla mobilità",
+      "Bandi e concorsi",
+      "Internazionale"
+    ]
   ]
 }

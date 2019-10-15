@@ -13,6 +13,9 @@ class Personale extends React.Component {
             ric={Staff.ric}
             imp={Staff.imp}
             serv={Staff.serv}
+            name={"Personale T/A"}
+            cName={"staff"}
+            activate={false}
           />
         </div>
       </div>

@@ -12,8 +12,13 @@
   "ric": [],
   "imp": [],
   "serv": [
-    "Rapporto di lavoro",
+    [
+      "Associazioni sindacali",
+      "Orario di lavoro",
+      "Servizi amministrativi",
+      "Rapporto di lavoro"
+    ],
     "Borse di studio e Agevolazioni",
-    "Servizi online"
+    ["Area Riservata", "Wi-Fi", "Rubrica", "Help Desk", "Servizi online"]
   ]
 }

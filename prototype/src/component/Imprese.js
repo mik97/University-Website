@@ -13,6 +13,9 @@ class Imprese extends React.Component {
             ric={Enterprise.ric}
             imp={Enterprise.imp}
             serv={Enterprise.serv}
+            name={"Enti e Imprese"}
+            cName={"enterprise"}
+            activate={false}
           />
         </div>
       </div>
