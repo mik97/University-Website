@@ -9,7 +9,7 @@ import {
 import "../css/Sections.css";
 
 class Sections extends React.Component {
-  getContent(arr, title) {
+  generateItem(arr, title) {
     if (arr !== null) {
       return arr.map((el, index) => {
         if (el instanceof Array) {
@@ -22,7 +22,7 @@ class Sections extends React.Component {
               id="dropdown-button-drop-right"
               key={"right" + index}
             >
-              {this.getContent(el, title + "/" + t)}
+              {this.generateItem(el, title + "/" + t)}
             </DropdownButton>
           );
         }
@@ -37,7 +37,7 @@ class Sections extends React.Component {
     return;
   }
 
-  chooseContents(arr, title) {
+  getContents(arr, title) {
     if (arr.length > 0) {
       return (
         <NavDropdown
@@ -45,7 +45,7 @@ class Sections extends React.Component {
           title={title}
           id="basic-nav-dropdown"
         >
-          {this.getContent(arr, title)}
+          {this.generateItem(arr, title)}
         </NavDropdown>
       );
     }
@@ -59,11 +59,11 @@ class Sections extends React.Component {
         <Navbar variant="dark" bg="blue">
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              {this.chooseContents(this.props.at, "Ateneo")}
-              {this.chooseContents(this.props.did, "Didattica")}
-              {this.chooseContents(this.props.ric, "Ricerca")}
-              {this.chooseContents(this.props.imp, "Imprese e Territorio")}
-              {this.chooseContents(this.props.serv, "Servizi e Opportunità")}
+              {this.getContents(this.props.at, "Ateneo")}
+              {this.getContents(this.props.did, "Didattica")}
+              {this.getContents(this.props.ric, "Ricerca")}
+              {this.getContents(this.props.imp, "Imprese e Territorio")}
+              {this.getContents(this.props.serv, "Servizi e Opportunità")}
             </Nav>
             <div hidden={this.props.activate}>{this.props.name}</div>
           </Navbar.Collapse>

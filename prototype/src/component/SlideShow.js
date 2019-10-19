@@ -18,7 +18,7 @@ class SlideShow extends React.Component {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="item-image" src={immagine2} alt="Third slide" />
+          <img className="item-image" src={immagine2} alt="Second slide" />
 
           <Carousel.Caption>
             <h3>Second slide label</h3>

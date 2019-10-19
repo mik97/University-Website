@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardDeck, Button } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.css";
 import "../css/Cards.css";
 
 class Cards extends React.Component {
@@ -67,22 +66,6 @@ class Cards extends React.Component {
             <small className="text-muted">Last updated 7 days ago</small>
           </Card.Footer>
         </Card>
-        {/* <Card className="card">
-          <Card.Img variant="top" src="" />
-          <Card.Body>
-            <Card.Title>{this.props.type} 5</Card.Title>
-            <Card.Text>
-              A diam maecenas sed enim ut sem viverra aliquet. Interdum varius
-              sit amet mattis vulputate enim. Id volutpat lacus laoreet non
-              curabitur gravida arcu. Odio pellentesque diam volutpat commodo
-              sed.
-            </Card.Text>
-            <Button className="blueButton">Read more</Button>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 1 week ago</small>
-          </Card.Footer>
-        </Card> */}
       </CardDeck>
     );
   }

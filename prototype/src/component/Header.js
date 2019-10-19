@@ -11,8 +11,6 @@ class Header extends React.Component {
   render() {
     return (
       <div className="divHeader">
-        {/* <Row>
-          <Col> */}
         <Nav className="navHeader">
           <Nav.Item>
             <Nav.Link className="navslinkheader">Orari</Nav.Link>
@@ -86,11 +84,6 @@ class Header extends React.Component {
             </a>
           </div>
         </Nav>
-        {/* </Col>
-          <Col className="social"> */}
-
-        {/* </Col>
-        </Row> */}
       </div>
     );
   }

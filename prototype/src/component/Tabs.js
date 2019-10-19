@@ -5,13 +5,13 @@ import Cards from "./Cards";
 class Tabs extends React.Component {
   render() {
     return (
-      <Tab.Container id="uncontrolled-tab-example" defaultActiveKey="eventi">
+      <Tab.Container id="uncontrolled-tab-example" defaultActiveKey="avvisi">
         <Row className="first-row">
           <Col className="first">
             <Nav variant="pills">
               <Nav.Item>
-                <Nav.Link className="navsLink" eventKey="eventi">
-                  Eventi
+                <Nav.Link className="navsLink" eventKey="avvisi">
+                  Avvisi
                 </Nav.Link>
               </Nav.Item>
             </Nav>
@@ -19,8 +19,8 @@ class Tabs extends React.Component {
           <Col className="second">
             <Nav variant="pills">
               <Nav.Item>
-                <Nav.Link className="navsLink" eventKey="avvisi">
-                  Avvisi
+                <Nav.Link className="navsLink" eventKey="eventi">
+                  Eventi
                 </Nav.Link>
               </Nav.Item>
             </Nav>

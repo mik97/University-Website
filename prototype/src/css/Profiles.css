@@ -2,10 +2,19 @@
   margin-top: 30px;
 }
 
-a.btn.btn-future {
+button.btn.btn-flat {
+  color: white;
   padding-left: 10px;
+}
+
+a.btn.btn-future {
+  padding-left: 0px;
+  padding-right: 0px;
   color: white;
   background-color: #dc3545;
+  border-radius: 0.25rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 a.btn.btn-student {

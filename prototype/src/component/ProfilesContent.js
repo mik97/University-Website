@@ -3,7 +3,7 @@ import { Card, CardDeck, Button } from "react-bootstrap";
 // import "bootstrap/dist/css/bootstrap.css";
 import "../css/Cards.css";
 
-class Cards extends React.Component {
+class ProfilesContent extends React.Component {
   render() {
     return (
       <CardDeck>
@@ -27,4 +27,4 @@ class Cards extends React.Component {
   }
 }
 
-export default Cards;
+export default ProfilesContent;
