@@ -43,27 +43,57 @@
 }
 
 .future {
-  background-color: #dc3545;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 59, 93, 1) 0%,
+    rgba(27, 59, 93, 1) 31%,
+    rgba(120, 170, 223, 1) 100%
+  );
 }
 
 .student {
-  background-color: #f1b40e;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 59, 93, 1) 0%,
+    rgba(33, 71, 112, 1) 26%,
+    rgba(39, 155, 139, 1) 100%
+  );
 }
 
 .graduated {
-  background-color: #37910d;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 59, 93, 1) 0%,
+    rgba(24, 65, 109, 1) 27%,
+    rgba(191, 69, 69, 1) 100%
+  );
 }
 
 .professor {
-  background-color: #1b5394;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 59, 93, 1) 0%,
+    rgba(24, 71, 109, 1) 28%,
+    rgba(145, 65, 132, 1) 100%
+  );
 }
 
 .staff {
-  background-color: #5c3294;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 59, 93, 1) 0%,
+    rgba(26, 70, 117, 1) 39%,
+    rgba(155, 155, 63, 1) 100%
+  );
 }
 
 .enterprise {
-  background-color: #8f3064;
+  background: linear-gradient(
+    90deg,
+    rgba(32, 70, 110, 1) 0%,
+    rgba(38, 90, 121, 1) 48%,
+    rgba(133, 125, 125, 1) 82%
+  );
 }
 
 /* .navbar-dark .navbar-nav .nav-link.disabled {

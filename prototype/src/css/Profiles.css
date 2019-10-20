@@ -1,61 +1,89 @@
 .profiles {
   margin-top: 30px;
+
+  /* background-color: rgba(120, 170, 223, 1); */
+  /* border-radius: 0.25rem; */
 }
 
 button.btn.btn-flat {
-  color: white;
+  color: black;
   padding-left: 10px;
 }
 
 a.btn.btn-future {
+  font-size: 14pt;
   padding-left: 0px;
   padding-right: 0px;
-  color: white;
-  background-color: #dc3545;
-  border-radius: 0.25rem;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(120, 170, 223, 1);
 }
 
 a.btn.btn-student {
+  font-size: 14pt;
   padding-left: 10px;
   padding-top: 17px;
-  color: white;
-  background-color: #f1b40e;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(39, 155, 139, 1);
 }
 
 a.btn.btn-graduate {
+  font-size: 14pt;
   padding-left: 10px;
   text-align: center;
   padding-top: 17px;
-  color: white;
-  background-color: #37910d;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(191, 69, 69, 1);
 }
 
 a.btn.btn-professor {
+  font-size: 14pt;
   padding-left: 10px;
   text-align: center;
-  color: white;
-  background-color: #1b5394;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(145, 65, 132, 1);
 }
 
 a.btn.btn-staff {
+  font-size: 14pt;
   padding-left: 10px;
   text-align: center;
-  color: white;
-  background-color: #5c3294;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(155, 155, 63, 1);
 }
 
 a.btn.btn-enterprise {
+  font-size: 14pt;
   padding-left: 10px;
   text-align: center;
-  color: white;
-  background-color: #8f3064;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(133, 125, 125, 1);
 }
 
 .btn.btn-international {
+  font-size: 14pt;
   padding-left: 10px;
   text-align: center;
-  color: white;
-  background-color: #ffd341;
+  margin-right: 10px;
+  color: black;
+  border-radius: 0rem;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(185, 128, 63, 1);
 }

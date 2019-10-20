@@ -21,7 +21,7 @@
     ["E-learning", "Mooc", "Tutorato", "Servizi a supporto della didattica"]
   ],
   "ric": [],
-  "imp": ["Stage e placement"],
+  "imp": ["Eventi", "Stage e placement", "Career Day"],
   "serv": [
     [
       "Rinnovo iscrizioni",
@@ -41,7 +41,8 @@
       "Wi-Fi",
       "Utility",
       "Rubrica",
-      "Servizi online"
+      "Servizi online",
+      "Help Desk"
     ],
     "Borse di studio e Agevolazioni",
     [

@@ -19,7 +19,21 @@
       "Rapporto di lavoro"
     ],
     "Borse di studio e Agevolazioni",
-    ["Area Riservata", "Wi-Fi", "Rubrica", "Help Desk", "Servizi online"]
+    [
+      "Posta elettronica di Ateneo",
+      "Area Riservata",
+      "Wi-Fi",
+      "Rubrica",
+      "Help Desk",
+      "Servizi online"
+    ],
+    [
+      "Programma mobilità",
+      "Bandi di mobilità",
+      "Tutorato e supporto alla mobilità",
+      "Stipulare e gestire accordi",
+      "Internazionale"
+    ]
   ],
   "row1": ["Strutture", "Albo Ufficiale", "Servizi amministrativi"],
   "row2": ["Orari Lavoro", "Area Riservata", "Help Desk"]
