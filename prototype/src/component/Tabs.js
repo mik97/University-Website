@@ -1,5 +1,5 @@
 import React from "react";
-import { Tab, Row, Nav, Col } from "react-bootstrap";
+import { Tab, Row, Nav, Col, Carousel } from "react-bootstrap";
 import "../css/Tabs.css";
 import Cards from "./Cards";
 class Tabs extends React.Component {
@@ -28,14 +28,44 @@ class Tabs extends React.Component {
         </Row>
         <Row className="second-row">
           <Col>
-            <Tab.Content className="content">
-              <Tab.Pane eventKey="eventi">
-                <Cards type={"Evento"} />
-              </Tab.Pane>
-              <Tab.Pane eventKey="avvisi">
-                <Cards type={"Avviso"} />
-              </Tab.Pane>
-            </Tab.Content>
+            <Carousel
+              className="carouselTab"
+              controls={false}
+              nextIcon
+              prevIcon
+              interval={null}
+            >
+              <Carousel.Item>
+                <Tab.Content className="content">
+                  <Tab.Pane eventKey="eventi">
+                    <Cards type={"Evento"} />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="avvisi">
+                    <Cards type={"Avviso"} />
+                  </Tab.Pane>
+                </Tab.Content>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Tab.Content className="content">
+                  <Tab.Pane eventKey="eventi">
+                    <Cards type={"Evento"} />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="avvisi">
+                    <Cards type={"Avviso"} />
+                  </Tab.Pane>
+                </Tab.Content>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Tab.Content className="content">
+                  <Tab.Pane eventKey="eventi">
+                    <Cards type={"Evento"} />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="avvisi">
+                    <Cards type={"Avviso"} />
+                  </Tab.Pane>
+                </Tab.Content>
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
       </Tab.Container>

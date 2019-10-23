@@ -19,11 +19,3 @@
   outline: black;
   background-image: url("../immagini/arrowRight.png");
 }
-
-.carousel-control-next-icon:after {
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  color: red;
-}

@@ -11,6 +11,7 @@ import Laureato from "./Laureato";
 import Docenti from "./Docenti";
 import Personale from "./Personale";
 import Imprese from "./Imprese";
+import Content from "./Content";
 
 class App extends React.Component {
   render() {
@@ -30,6 +31,21 @@ class App extends React.Component {
           <Route path={"/docenti"} component={Docenti} />
           <Route path={"/personale"} component={Personale} />
           <Route path={"/entieimprese"} component={Imprese} />
+          <Route path={"/Ateneo"}>
+            {/* {console.log(
+              window.location.href.substr(
+                window.location.href.indexOf("/Ateneo/") + "/Ateneo/".length,
+                window.location.href.length
+              )
+            )} */}
+            <Content
+              root="Ateneo"
+              location={window.location.href.substr(
+                window.location.href.indexOf("/Ateneo/") + "/Ateneo/".length,
+                window.location.href.length
+              )}
+            />
+          </Route>
         </div>
         <div className="App-footer">
           <Footer />

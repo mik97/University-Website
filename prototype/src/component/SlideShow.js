@@ -9,7 +9,7 @@ import "../css/SlideShow.css";
 class SlideShow extends React.Component {
   render() {
     return (
-      <Carousel className="carouselSlideShow">
+      <Carousel className="carouselSlideShow" indicators={false}>
         <Carousel.Item>
           <img className="item-image" src={immagine1} alt="First slide" />
           <Carousel.Caption>
