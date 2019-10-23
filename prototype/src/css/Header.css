@@ -1,13 +1,13 @@
 .divHeader {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .navslinkheader {
   color: white;
-  margin-top: 10px;
-  margin-right: 5px;
   font-size: 14px;
+  margin-top: 8px;
 }
 
 .navslinkheader:hover {
@@ -20,10 +20,9 @@
 
 .social {
   color: white;
-  margin-top: 8px;
   font-size: 14px;
-  text-align: right;
-  margin-left: 640px;
+  margin-right: 16px;
+  margin-top: 8px;
 }
 
 .socials {
