@@ -9,9 +9,12 @@
   text-align: center;
   margin-top: 20px;
   color: #1b3b5d;
+  font-size: 56px;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .thirdInfo {
+  font-family: "Segoe UI", sans-serif;
   text-align: center;
   margin-top: 20px;
   padding-bottom: 30px;

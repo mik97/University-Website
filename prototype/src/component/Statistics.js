@@ -13,16 +13,16 @@ class Statistics extends React.Component {
         </Row>
         <Row className="secondValue">
           <Col>
-            <h2>27</h2>
+            <span className="value">27</span>
           </Col>
           <Col>
-            <h2>6</h2>
+            <span className="value">6</span>
           </Col>
           <Col>
-            <h2>80,2%</h2>
+            <span className="value">80,2%</span>
           </Col>
           <Col>
-            <h2>90,5%</h2>
+            <span>90,5%</span>
           </Col>
         </Row>
         <Row className="thirdInfo">
