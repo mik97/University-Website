@@ -28,7 +28,7 @@ class Sections extends React.Component {
         }
 
         return (
-          <NavDropdown.Item href={"/" + title} key={"a" + index}>
+          <NavDropdown.Item href={"/" + title + "/" + el} key={"a" + index}>
             {el}
           </NavDropdown.Item>
         );
