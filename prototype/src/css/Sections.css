@@ -23,8 +23,23 @@
   color: white;
 } */
 
+.dropdown-item:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(213, 230, 249, 1) 47%,
+    rgba(175, 208, 243, 1) 67%
+  );
+}
+
 .dropdown-item:focus {
-  background-color: #1b3b5d;
+  color: black;
+  background-color: #afd0f3;
+}
+
+.dropright {
+  color: blue;
 }
 
 .navbar-dark .navbar-nav .nav-link {
