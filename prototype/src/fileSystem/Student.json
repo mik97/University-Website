@@ -1,12 +1,14 @@
 {
   "at": [
-    "Regolamento",
-    "Calendario Accademico",
+    "Regolamento studenti",
     "Strutture",
-    "Guida dello studente"
+    "Guida dello studente",
+    "Calendario Accademico"
   ],
 
   "did": [
+    "Dipartimenti",
+    "Verifica della preparazione iniziale",
     [
       "Corsi di laurea triennale e magistrale",
       "Dottorati",
@@ -17,7 +19,6 @@
       "Offerta formativa"
     ],
     "Regolamenti didattici",
-    "Verifica della preparazione iniziale",
     ["E-learning", "Mooc", "Tutorato", "Servizi a supporto della didattica"]
   ],
   "ric": [],
@@ -41,8 +42,8 @@
       "Wi-Fi",
       "Utility",
       "Rubrica",
-      "Servizi online",
-      "Help Desk"
+      "Help Desk",
+      "Servizi online"
     ],
     "Borse di studio e Agevolazioni",
     [
@@ -50,16 +51,18 @@
       "Bandi mobilità internazionale",
       "Internazionale"
     ],
+    "Elezioni studentesche",
     "Disabilità e DSA",
+    "Associazioni e tempo libero",
     [
       "Agevolazioni per attività culturali e sportive",
       "Residenze, mense e punti ristoro",
+      "Trovare alloggio",
       "Trasporti",
       "Territorio",
       "Salute e assistenza sanitaria",
       "Vivere la città"
     ],
-    "Associazioni e tempo libero",
     "Servizi consulenza psicologica"
   ],
   "row1": [

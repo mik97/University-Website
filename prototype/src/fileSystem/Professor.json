@@ -4,15 +4,19 @@
     "Diario Rettore",
     "Amministrazione",
     "Strutture",
+    "Regolamento personale",
     "Calendario Accademico",
     "Normativa"
   ],
 
-  "did": ["Regolamenti didattici"],
+  "did": ["Dipartimenti", "Regolamenti didattici"],
   "ric": [
     "Progetti finanziati",
-    "Prodotti ricerca",
+    "Dove fare ricerca",
     "Finanziamenti",
+    "Portale ricercatori",
+    "IRIS",
+    "Spin-off",
     "Riviste scientifiche"
   ],
   "imp": [],
@@ -21,14 +25,12 @@
       "Portale Didattica",
       "Portale Docenti",
       "Posta elettronica di Ateneo",
-      "IRIS",
       "Wi-Fi",
       "Rubrica",
       "Utility",
       "Help Desk",
       "Servizi online"
     ],
-    "Borse di studio e Agevolazioni",
     "Disabilità e DSA",
     [
       "Programma di mobilità internazionle",
@@ -36,7 +38,8 @@
       "Tutorato e supporto alla mobilità",
       "Bandi e concorsi",
       "Internazionale"
-    ]
+    ],
+    "Borse di studio e Agevolazioni"
   ],
   "row1": ["Calendario Accademico", "Dipartimenti", "IRIS"],
   "row2": ["Portale didattica", "Portale docenti", "Bandi e Concorsi"]

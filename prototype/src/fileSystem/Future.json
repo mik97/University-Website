@@ -1,7 +1,17 @@
 {
-  "at": ["Il sistema universitario", "Guida dello studente", "Strutture"],
+  "at": [
+    "Storia",
+    "Il sistema universitario",
+    "Guida dello studente",
+    "Strutture",
+    "Statistiche",
+    "Calendario Accademico"
+  ],
 
   "did": [
+    "Dipartimenti",
+    "Verifica della preparazione iniziale",
+    "Orientamento",
     [
       "Corsi di laurea triennale e magistrale",
       "Dottorati",
@@ -10,9 +20,7 @@
       "Corsi di perfezionamento",
       "Corsi di lingue",
       "Offerta formativa"
-    ],
-    "Verifica della preparazione iniziale",
-    "Orientamento"
+    ]
   ],
   "ric": [],
   "imp": [],
@@ -27,8 +35,11 @@
       "Tasse e contributi",
       "Immatricolazioni"
     ],
+
     "Disabilità e DSA",
     "Borse di studio e Agevolazioni",
+    "Associazioni e tempo libero",
+    ["Portale Didattica", "Rubrica", "Servizi online"],
     [
       "Agevolazioni per attività culturali e sportive",
       "Residenze, mense e punti ristoro",
@@ -38,8 +49,6 @@
       "Salute e assistenza sanitaria",
       "Vivere la città"
     ],
-    "Associazioni e tempo libero",
-    "Servizi online",
     "Come raggiungerci"
   ],
   "row1": [

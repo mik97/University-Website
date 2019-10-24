@@ -1,70 +1,79 @@
 import React from "react";
-import { Row, Col, Accordion, Card, Button, Nav, Tab } from "react-bootstrap";
+import { Row, Col, Nav, Tab } from "react-bootstrap";
 import "../css/Content.css";
 import Sections from "./Sections";
 import NoProfile from "../fileSystem/NoProfile.json";
 
 class Content extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { activate: false };
+  whiteSpace(element) {
+    var count = 0;
+    var i;
+    for (i = 0; i < element.length; i++) {
+      if (element.charAt(i) === "%") {
+        count++;
+      }
+    }
+
+    return count;
   }
 
-  click() {}
+  replaceWhiteSpace(element) {
+    var c = this.whiteSpace(element);
 
-  getElements() {
+    while (c !== 0) {
+      c--;
+      element = element.replace("%20", " ");
+    }
+
+    return element;
+  }
+
+  getContent() {
     switch (this.props.root) {
       case "Ateneo":
         return NoProfile.at.map((el, index) => {
-          return (
-            <Row>
-              <Col>
-                <Card>
-                  <Card.Header>
-                    <Nav variant="pills">
-                      <Nav.Item>
-                        <Accordion.Toggle className="navsLink" eventKey={el}>
-                          {el}
-                        </Accordion.Toggle>
-                      </Nav.Item>
-                    </Nav>
-                  </Card.Header>
-                </Card>
-              </Col>
-              <Col>
-                {index === 0 ? (
-                  <Tab.Content className="content">
-                    <Tab.Pane eventKey="Storia">
-                      <h3>Storia</h3>
-                      <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Nisl pretium fusce id velit.
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="Il sistema universitario">
-                      <h3>Il sistema universitario</h3>
-                      <div>
-                        Egestas egestas fringilla phasellus faucibus scelerisque
-                        eleifend. Faucibus scelerisque eleifend donec pretium
-                        vulputate sapien nec. Quis hendrerit dolor magna eget
-                        est lorem ipsum dolor.
-                      </div>
-                    </Tab.Pane>
-                  </Tab.Content>
-                ) : null}
-              </Col>
-            </Row>
-            // <Card>
-            //   <Card.Header>
-            //     <Accordion.Toggle as={Button} variant="link" eventKey="Storia">
-            //       {el}
-            //     </Accordion.Toggle>
-            //   </Card.Header>
-            // </Card>
-          );
+          return <Tab.Pane eventKey={el}>{"A" + index}</Tab.Pane>;
         });
-      // case "Ricerca"
+      default:
+        return;
+    }
+  }
+
+  getElements(arr, name) {
+    console.log(name);
+    return arr.map(el => {
+      if (el instanceof Array) {
+        return (
+          <Nav.Item>
+            <Nav.Link eventKey={el[el.length - 1]} disabled>
+              {el[el.length - 1]}
+            </Nav.Link>
+            {this.getElements(el, name + el[el.length - 1] + "/")}
+          </Nav.Item>
+        );
+      }
+      return (
+        <Nav.Item>
+          <Nav.Link eventKey={el} href={name + el}>
+            {el}
+          </Nav.Link>
+        </Nav.Item>
+      );
+    });
+  }
+
+  selectType() {
+    switch (this.props.root) {
+      case "Ateneo":
+        return this.getElements(NoProfile.at, "/Ateneo/");
+      case "Didattica":
+        return this.getElements(NoProfile.did, "/Didattica/");
+      case "Ricerca":
+        return this.getElements(NoProfile.ric, "/Ricerca/");
+      case "Imprese%20e%20Territorio":
+        return this.getElements(NoProfile.imp, "/Imprese%20e%20Territorio/");
+      case "Servizi%20e%20Opportunità":
+        return this.getElements(NoProfile.serv, "/Servizi%20e%20Opportunità/");
       default:
         return;
     }
@@ -82,20 +91,23 @@ class Content extends React.Component {
           cName={"noprofile"}
           activate={true}
         />
-        <Row className="firstRow">
-          <Col xs lg="2">
-            <h2>{this.props.root}</h2>
-            <Accordion
-              className="accordionContent"
-              defaultActiveKey={this.props.location}
-            >
-              <Tab.Container defaultActiveKey={this.props.location}>
-                {this.getElements()}
-              </Tab.Container>
-            </Accordion>
-          </Col>
-          {/* {this.state.activate ? <Col>Ciao</Col> : <Col>Oh no</Col>} */}
-        </Row>
+
+        <Tab.Container
+          id="left-tabs-example"
+          defaultActiveKey={this.replaceWhiteSpace(this.props.location)}
+        >
+          <Row className="firstRow">
+            <Col sm={3}>
+              <h3>{this.replaceWhiteSpace(this.props.root)}</h3>
+              <Nav variant="pills" className="flex-column">
+                {this.selectType()}
+              </Nav>
+            </Col>
+            <Col sm={9}>
+              <Tab.Content>{this.getContent()}</Tab.Content>
+            </Col>
+          </Row>
+        </Tab.Container>
       </div>
     );
   }

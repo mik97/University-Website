@@ -2,23 +2,25 @@
   "at": [
     "Storia",
     "Mission",
-    "Diario Rettore",
-    "Strutture",
     "Rapporti con il territorio",
-    "Associazioni sindacali",
+    "Strutture",
+    "Diario Rettore",
     "Statistiche"
   ],
 
   "did": [],
-  "ric": ["Supporto alla ricerca"],
+  "ric": ["Spin-off"],
   "imp": [
-    "Stage e placement",
-    "Eventi in collaborazione",
-    "Start-up e spin-off"
+    "Rapporto con le imprese",
+    "Eventi",
+    "Stage e Placement",
+    "Career Day",
+    "Start-up"
   ],
   "serv": [
     "Uso aule e spazi per eventi",
-    "Gare, concorsi e lavori in università"
+    "Gare, concorsi e lavori in università",
+    "Come raggiungerci"
   ],
   "row1": ["Mission", "Spin-off", "Rapporto con le imprese"],
   "row2": [
