@@ -7,17 +7,13 @@ class Tabs extends React.Component {
     return (
       <Tab.Container id="uncontrolled-tab-example" defaultActiveKey="avvisi">
         <Row className="first-row">
-          <Col className="first">
+          <Col className="buttons">
             <Nav variant="pills">
               <Nav.Item>
                 <Nav.Link className="navsLink" eventKey="avvisi">
                   Avvisi
                 </Nav.Link>
               </Nav.Item>
-            </Nav>
-          </Col>
-          <Col className="second">
-            <Nav variant="pills">
               <Nav.Item>
                 <Nav.Link className="navsLink" eventKey="eventi">
                   Eventi
