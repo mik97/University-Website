@@ -5,6 +5,7 @@ import "../css/Home.css";
 import Statistics from "./Statistics";
 import Sections from "./Sections";
 import NoProfile from "../fileSystem/NoProfile.json";
+import LinkUtili from "./LinkUtili";
 
 class Home extends React.Component {
   render() {
@@ -29,6 +30,9 @@ class Home extends React.Component {
         </div>
         <div className="statistics">
           <Statistics />
+        </div>
+        <div className="linkUtili">
+          <LinkUtili />
         </div>
       </div>
     );
