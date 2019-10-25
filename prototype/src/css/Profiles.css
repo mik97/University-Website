@@ -1,6 +1,6 @@
 .profiles {
   margin-top: 30px;
-
+  margin-bottom: 5px;
   /* background-color: rgba(120, 170, 223, 1); */
   /* border-radius: 0.25rem; */
 }
@@ -8,44 +8,49 @@
 button.btn.btn-flat {
   color: black;
   padding-left: 10px;
+  align-content: center;
 }
 
 a.btn.btn-future {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 0px;
   padding-right: 0px;
   margin-right: 10px;
   color: black;
-  border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(120, 170, 223, 1);
+  display: inline-flex;
+  align-items: center;
 }
 
 a.btn.btn-student {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 10px;
-  padding-top: 17px;
   margin-right: 10px;
   color: black;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(39, 155, 139, 1);
+  display: inline-flex;
+  align-items: center;
 }
 
 a.btn.btn-graduate {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 10px;
   text-align: center;
-  padding-top: 17px;
+
   margin-right: 10px;
   color: black;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(191, 69, 69, 1);
+  display: inline-flex;
+  align-items: center;
 }
 
 a.btn.btn-professor {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 10px;
   text-align: center;
   margin-right: 10px;
@@ -53,10 +58,12 @@ a.btn.btn-professor {
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(145, 65, 132, 1);
+  display: inline-flex;
+  align-items: center;
 }
 
 a.btn.btn-staff {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 10px;
   text-align: center;
   margin-right: 10px;
@@ -64,10 +71,12 @@ a.btn.btn-staff {
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(155, 155, 63, 1);
+  display: inline-flex;
+  align-items: center;
 }
 
 a.btn.btn-enterprise {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 10px;
   text-align: center;
   margin-right: 10px;
@@ -75,10 +84,12 @@ a.btn.btn-enterprise {
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(133, 125, 125, 1);
+  display: inline-flex;
+  align-items: center;
 }
 
 .btn.btn-international {
-  font-size: 14pt;
+  font-size: 12pt;
   padding-left: 10px;
   text-align: center;
   margin-right: 10px;
@@ -86,4 +97,6 @@ a.btn.btn-enterprise {
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(185, 128, 63, 1);
+  display: inline-flex;
+  align-items: center;
 }

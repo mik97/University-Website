@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/Profiles.css";
 import { ButtonGroup, Button } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.css";
 
 class Profiles extends React.Component {
   render() {

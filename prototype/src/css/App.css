@@ -1,6 +1,7 @@
 .main {
   background-color: #f3f2f5;
   padding-left: 0px;
+  display: inline-block;
 }
 
 .App-header {
@@ -10,12 +11,6 @@
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  /* background-image: url("../immagini/camerino.png");
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .App-footer {
