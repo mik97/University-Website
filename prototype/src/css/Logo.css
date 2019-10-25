@@ -15,4 +15,6 @@
 
 .paths {
   text-align: right;
+  display: inline-flex;
+  align-items: flex-end;
 }
