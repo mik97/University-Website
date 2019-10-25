@@ -1,5 +1,5 @@
 import React from "react";
-import Staff from "../fileSystem/Staff.json";
+import Staff from "../fileSystem/staff.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -16,9 +16,9 @@ class Personale extends React.Component {
             ric={Staff.ric}
             imp={Staff.imp}
             serv={Staff.serv}
-            name={"Personale T/A"}
-            cName={"staff"}
-            activate={false}
+            type={Staff.urlName}
+            name={Staff.name}
+            cName={Staff.fileName}
           />
         </div>
         <div>

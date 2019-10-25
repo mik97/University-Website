@@ -1,4 +1,7 @@
 {
+  "fileName": "staff",
+  "name": "Personale T/A",
+  "urlName": "/personale/",
   "at": [
     "Governance",
     "Regolamenti",

@@ -1,5 +1,5 @@
 import React from "react";
-import Professor from "../fileSystem/Professor.json";
+import Professor from "../fileSystem/professor.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -16,9 +16,9 @@ class Docenti extends React.Component {
             ric={Professor.ric}
             imp={Professor.imp}
             serv={Professor.serv}
-            name={"Docenti o Ricercatori"}
-            cName={"professor"}
-            activate={false}
+            type={Professor.urlName}
+            name={Professor.name}
+            cName={Professor.fileName}
           />
         </div>
         <div>

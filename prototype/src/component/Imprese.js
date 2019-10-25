@@ -1,5 +1,5 @@
 import React from "react";
-import Enterprise from "../fileSystem/Enterprise.json";
+import Enterprise from "../fileSystem/enterprise.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -16,9 +16,9 @@ class Imprese extends React.Component {
             ric={Enterprise.ric}
             imp={Enterprise.imp}
             serv={Enterprise.serv}
-            name={"Enti e Imprese"}
-            cName={"enterprise"}
-            activate={false}
+            type={Enterprise.urlName}
+            name={Enterprise.name}
+            cName={Enterprise.fileName}
           />
         </div>
         <div>

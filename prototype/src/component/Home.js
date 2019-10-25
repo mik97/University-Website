@@ -4,7 +4,7 @@ import Tabs from "./Tabs";
 import "../css/Home.css";
 import Statistics from "./Statistics";
 import Sections from "./Sections";
-import NoProfile from "../fileSystem/NoProfile.json";
+import NoProfile from "../fileSystem/noprofile.json";
 import LinkUtili from "./LinkUtili";
 
 class Home extends React.Component {
@@ -18,8 +18,8 @@ class Home extends React.Component {
             ric={NoProfile.ric}
             imp={NoProfile.imp}
             serv={NoProfile.serv}
-            cName={"noprofile"}
-            activate={true}
+            type={NoProfile.urlName}
+            cName={NoProfile.fileName}
           />
         </div>
         <div className="slideShow">

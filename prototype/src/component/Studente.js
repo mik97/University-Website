@@ -1,5 +1,5 @@
 import React from "react";
-import Student from "../fileSystem/Student.json";
+import Student from "../fileSystem/student.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -16,9 +16,9 @@ class Studente extends React.Component {
             ric={Student.ric}
             imp={Student.imp}
             serv={Student.serv}
-            name={"Studente"}
-            cName={"student"}
-            activate={false}
+            type={Student.urlName}
+            name={Student.name}
+            cName={Student.fileName}
           />
         </div>
         <div>

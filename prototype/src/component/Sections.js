@@ -15,7 +15,13 @@ class Sections extends React.Component {
     if (arr !== null) {
       return arr.map((el, index) => {
         if (el instanceof Array) {
-          const t = el.pop();
+          const t = el[el.length - 1];
+          var newArray = [];
+          el.forEach(x => {
+            if (x !== t) {
+              newArray.push(x);
+            }
+          });
           return (
             <Accordion>
               <Card className="cardAccordion">
@@ -34,7 +40,7 @@ class Sections extends React.Component {
                 </Accordion.Toggle>
                 <Accordion.Collapse className="menuBody" eventKey="0">
                   <Card.Body>
-                    {this.generateItem(el, title + "/" + t)}
+                    {this.generateItem(newArray, title + "/" + t)}
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -43,7 +49,10 @@ class Sections extends React.Component {
         }
 
         return (
-          <NavDropdown.Item href={"/" + title + "/" + el} key={"a" + index}>
+          <NavDropdown.Item
+            href={this.props.type + title + "/" + el}
+            key={"a" + index}
+          >
             {el}
           </NavDropdown.Item>
         );
@@ -80,7 +89,7 @@ class Sections extends React.Component {
               {this.getContents(this.props.imp, "Imprese e Territorio")}
               {this.getContents(this.props.serv, "Servizi e Opportunità")}
             </Nav>
-            <div hidden={this.props.activate}>{this.props.name}</div>
+            <div>{this.props.name}</div>
           </Navbar.Collapse>
         </Navbar>
       </Container>

@@ -16,22 +16,38 @@ class Header extends React.Component {
             <Nav.Link className="navslinkheader">Orari</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="navslinkheader" eventKey="link-1">
+            <Nav.Link
+              href="/Servizi%20e%20Opportunità/Servizi%20Online/Rubrica"
+              className="navslinkheader"
+              eventKey="link-1"
+            >
               Rubrica
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="navslinkheader" eventKey="link-2">
+            <Nav.Link
+              href="/Servizi%20e%20Opportunità/Servizi%20Online/Help%20Desk"
+              className="navslinkheader"
+              eventKey="link-2"
+            >
               Help Desk
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="navslinkheader" eventKey="link-3">
+            <Nav.Link
+              href="/Servizi%20e%20Opportunit%C3%A0/Servizi%20Online/Portale%20Didattica"
+              className="navslinkheader"
+              eventKey="link-3"
+            >
               Portale didattica
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="navslinkheader" eventKey="link-4">
+            <Nav.Link
+              href="/Ateneo/Strutture"
+              className="navslinkheader"
+              eventKey="link-4"
+            >
               Strutture
             </Nav.Link>
           </Nav.Item>

@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Nav, Tab } from "react-bootstrap";
 import "../css/Content.css";
 import Sections from "./Sections";
-import NoProfile from "../fileSystem/NoProfile.json";
+import NoProfile from "../fileSystem/noprofile.json";
 
 class Content extends React.Component {
   whiteSpace(element) {
@@ -22,7 +22,12 @@ class Content extends React.Component {
 
     while (c !== 0) {
       c--;
-      element = element.replace("%20", " ");
+      if (element.search("%20") !== -1) {
+        element = element.replace("%20", " ");
+      } else {
+        c--;
+        element = element.replace("%C3%A0", "à");
+      }
     }
 
     return element;
@@ -32,48 +37,73 @@ class Content extends React.Component {
     switch (this.props.root) {
       case "Ateneo":
         return NoProfile.at.map((el, index) => {
-          return <Tab.Pane eventKey={el}>{"A" + index}</Tab.Pane>;
+          return <Tab.Pane eventKey={el + index}>{"A" + index}</Tab.Pane>;
         });
       default:
         return;
     }
   }
 
-  getElements(arr, name) {
-    console.log(name);
-    return arr.map(el => {
+  isInternal(internal, name, el) {
+    if (internal) {
+      return (
+        <Nav.Link eventKey={el} href={this.props.type.urlName + name + el}>
+          &ensp;&ensp;&ensp;&ensp;{el}
+        </Nav.Link>
+      );
+    } else {
+      return (
+        <Nav.Link eventKey={el} href={this.props.type.urlName + name + el}>
+          {el}
+        </Nav.Link>
+      );
+    }
+  }
+
+  getElements(arr, name, internal) {
+    return arr.map((el, index) => {
       if (el instanceof Array) {
+        const last = el[el.length - 1];
+        var newArray = [];
+        el.forEach(x => {
+          if (x !== last) {
+            newArray.push(x);
+          }
+        });
+
         return (
           <Nav.Item>
-            <Nav.Link eventKey={el[el.length - 1]} disabled>
-              {el[el.length - 1]}
+            <Nav.Link eventKey={last} disabled>
+              {last}
             </Nav.Link>
-            {this.getElements(el, name + el[el.length - 1] + "/")}
+            {this.getElements(newArray, name + last + "/", true)}
           </Nav.Item>
         );
       }
-      return (
-        <Nav.Item>
-          <Nav.Link eventKey={el} href={name + el}>
-            {el}
-          </Nav.Link>
-        </Nav.Item>
-      );
+      return <Nav.Item>{this.isInternal(internal, name, el)}</Nav.Item>;
     });
   }
 
   selectType() {
     switch (this.props.root) {
       case "Ateneo":
-        return this.getElements(NoProfile.at, "/Ateneo/");
+        return this.getElements(this.props.type.at, "Ateneo/", false);
       case "Didattica":
-        return this.getElements(NoProfile.did, "/Didattica/");
+        return this.getElements(this.props.type.did, "Didattica/", false);
       case "Ricerca":
-        return this.getElements(NoProfile.ric, "/Ricerca/");
+        return this.getElements(this.props.type.ric, "Ricerca/", false);
       case "Imprese%20e%20Territorio":
-        return this.getElements(NoProfile.imp, "/Imprese%20e%20Territorio/");
-      case "Servizi%20e%20Opportunità":
-        return this.getElements(NoProfile.serv, "/Servizi%20e%20Opportunità/");
+        return this.getElements(
+          this.props.type.imp,
+          "Imprese%20e%20Territorio/",
+          false
+        );
+      case "Servizi%20e%20Opportunit%C3%A0":
+        return this.getElements(
+          this.props.type.serv,
+          "Servizi%20e%20Opportunit%C3%A0/",
+          false
+        );
       default:
         return;
     }
@@ -83,19 +113,21 @@ class Content extends React.Component {
     return (
       <div>
         <Sections
-          at={NoProfile.at}
-          did={NoProfile.did}
-          ric={NoProfile.ric}
-          imp={NoProfile.imp}
-          serv={NoProfile.serv}
-          cName={"noprofile"}
-          activate={true}
+          at={this.props.type.at}
+          did={this.props.type.did}
+          ric={this.props.type.ric}
+          imp={this.props.type.imp}
+          serv={this.props.type.serv}
+          type={this.props.type.urlName}
+          name={this.props.type.name}
+          cName={this.props.type.fileName}
         />
 
         <Tab.Container
           id="left-tabs-example"
           defaultActiveKey={this.replaceWhiteSpace(this.props.location)}
         >
+          {/* {console.log(this.replaceWhiteSpace(this.props.location))} */}
           <Row className="firstRow">
             <Col sm={3}>
               <h3>{this.replaceWhiteSpace(this.props.root)}</h3>

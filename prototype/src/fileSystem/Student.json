@@ -1,4 +1,7 @@
 {
+  "fileName": "student",
+  "name": "Studente",
+  "urlName": "/studenti/",
   "at": [
     "Regolamento studenti",
     "Strutture",

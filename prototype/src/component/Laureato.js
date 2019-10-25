@@ -1,5 +1,5 @@
 import React from "react";
-import Graduate from "../fileSystem/Graduate.json";
+import Graduate from "../fileSystem/graduate.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -16,9 +16,9 @@ class Laureato extends React.Component {
             ric={Graduate.ric}
             imp={Graduate.imp}
             serv={Graduate.serv}
-            name={"Laureato"}
-            cName={"graduated"}
-            activate={false}
+            type={Graduate.urlName}
+            name={Graduate.name}
+            cName={Graduate.fileName}
           />
         </div>
         <div>

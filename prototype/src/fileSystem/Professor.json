@@ -1,4 +1,7 @@
 {
+  "fileName": "professor",
+  "name": "Docenti o Ricercatori",
+  "urlName": "/docenti/",
   "at": [
     "Governance",
     "Diario Rettore",

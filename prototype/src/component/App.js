@@ -12,9 +12,75 @@ import Docenti from "./Docenti";
 import Personale from "./Personale";
 import Imprese from "./Imprese";
 import Content from "./Content";
-import NoProfile from "../fileSystem/NoProfile.json";
+import noprofile from "../fileSystem/noprofile.json";
+import future from "../fileSystem/future.json";
+import student from "../fileSystem/student.json";
+import graduate from "../fileSystem/graduate.json";
+import professor from "../fileSystem/professor.json";
+import staff from "../fileSystem/staff.json";
+import enterprise from "../fileSystem/enterprise.json";
 
 class App extends React.Component {
+  addSimbol(element) {
+    for (var i = 0; i < element.length; i++) {
+      if (element.charAt(i) === " ") {
+        element = element.replace(" ", "%20");
+      }
+    }
+
+    return element;
+  }
+
+  getRoute(arr, profile, name, path) {
+    return arr.map(el => {
+      if (el instanceof Array) {
+        return this.getRoute(
+          el,
+          profile,
+          name + "/" + el[el.length - 1],
+          path + "/" + this.addSimbol(el[el.length - 1])
+        );
+      }
+      return (
+        <Route path={profile.urlName + name + "/" + el}>
+          <Content
+            type={profile}
+            root={
+              path.search("/") !== -1 ? path.substr(0, path.indexOf("/")) : path
+            }
+            location={window.location.href.substr(
+              window.location.href.indexOf("/" + path + "/") +
+                ("/" + path + "/").length,
+              window.location.href.length
+            )}
+          />
+        </Route>
+      );
+    });
+  }
+
+  getAllRoute(type) {
+    return (
+      <div>
+        {this.getRoute(type.at, type, "Ateneo", "Ateneo")}
+        {this.getRoute(type.did, type, "Didattica", "Didattica")}
+        {this.getRoute(type.ric, type, "Ricerca", "Ricerca")}
+        {this.getRoute(
+          type.imp,
+          type,
+          "Imprese e Territorio",
+          "Imprese%20e%20Territorio"
+        )}
+        {this.getRoute(
+          type.serv,
+          type,
+          "Servizi e Opportunità",
+          "Servizi%20e%20Opportunit%C3%A0"
+        )}
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="main">
@@ -26,86 +92,25 @@ class App extends React.Component {
         </div>
         <div className="home">
           <Route path={"/"} exact component={Home} />
-          <Route path={"/futuro-studente"} component={FuturoStudente} />
-          <Route path={"/studente"} component={Studente} />
-          <Route path={"/laureato"} component={Laureato} />
-          <Route path={"/docenti"} component={Docenti} />
-          <Route path={"/personale"} component={Personale} />
-          <Route path={"/entieimprese"} component={Imprese} />
-
-          {NoProfile.at.map(el => {
-            return (
-              <Route path={"/Ateneo/" + el}>
-                <Content
-                  root="Ateneo"
-                  location={window.location.href.substr(
-                    window.location.href.indexOf("/Ateneo/") +
-                      "/Ateneo/".length,
-                    window.location.href.length
-                  )}
-                />
-              </Route>
-            );
-          })}
-
-          {NoProfile.did.map(el => {
-            return (
-              <Route path={"/Didattica/" + el}>
-                <Content
-                  root="Didattica"
-                  location={window.location.href.substr(
-                    window.location.href.indexOf("/Didattica/") +
-                      "/Didattica/".length,
-                    window.location.href.length
-                  )}
-                />
-              </Route>
-            );
-          })}
-
-          {NoProfile.ric.map(el => {
-            return (
-              <Route path={"/Ricerca/" + el}>
-                <Content
-                  root="Ricerca"
-                  location={window.location.href.substr(
-                    window.location.href.indexOf("/Ricerca/") +
-                      "/Ricerca/".length,
-                    window.location.href.length
-                  )}
-                />
-              </Route>
-            );
-          })}
-          {NoProfile.imp.map(el => {
-            return (
-              <Route path={"/Imprese e Territorio/" + el}>
-                <Content
-                  root="Imprese%20e%20Territorio"
-                  location={window.location.href.substr(
-                    window.location.href.indexOf("/Imprese%20e%20Territorio/") +
-                      "/Imprese%20e%20Territorio/".length,
-                    window.location.href.length
-                  )}
-                />
-              </Route>
-            );
-          })}
-          {NoProfile.serv.map(el => {
-            return (
-              <Route path={"/Servizi e Opportunità/" + el}>
-                <Content
-                  root="Servizi%20e%20Opportunità"
-                  location={window.location.href.substr(
-                    window.location.href.indexOf(
-                      "/Servizi%20e%20Opportunità/"
-                    ) + "/Servizi%20e%20Opportunità/".length,
-                    window.location.href.length
-                  )}
-                />
-              </Route>
-            );
-          })}
+          <Route path={"/futuro-studente"} exact component={FuturoStudente} />
+          <Route path={"/studente"} exact component={Studente} />
+          <Route path={"/laureato"} exact component={Laureato} />
+          <Route path={"/docenti"} exact component={Docenti} />
+          <Route path={"/personale"} exact component={Personale} />
+          <Route path={"/entieimprese"} exact component={Imprese} />
+          {window.location.href.search(future.urlName) !== -1
+            ? this.getAllRoute(future)
+            : window.location.href.search(student.urlName) !== -1
+            ? this.getAllRoute(student)
+            : window.location.href.search(graduate.urlName) !== -1
+            ? this.getAllRoute(graduate)
+            : window.location.href.search(professor.urlName) !== -1
+            ? this.getAllRoute(professor)
+            : window.location.href.search(staff.urlName) !== -1
+            ? this.getAllRoute(staff)
+            : window.location.href.search(enterprise.urlName) !== -1
+            ? this.getAllRoute(enterprise)
+            : this.getAllRoute(noprofile)}
         </div>
         <div className="App-footer">
           <Footer />

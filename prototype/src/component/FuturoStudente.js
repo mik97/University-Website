@@ -1,6 +1,6 @@
 import React from "react";
 import Sections from "./Sections";
-import Future from "../fileSystem/Future.json";
+import Future from "../fileSystem/future.json";
 import { Row, Col, Tab } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
 import "../css/FuturoStudente.css";
@@ -16,9 +16,9 @@ class FuturoStudente extends React.Component {
           ric={Future.ric}
           imp={Future.imp}
           serv={Future.serv}
-          name={"Futuro Studente"}
-          cName={"future"}
-          activate={false}
+          type={Future.urlName}
+          name={Future.name}
+          cName={Future.fileName}
         />
         <div>
           <Tab.Container
