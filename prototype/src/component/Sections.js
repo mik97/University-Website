@@ -4,8 +4,10 @@ import {
   NavDropdown,
   Nav,
   Container,
-  DropdownButton
+  Accordion,
+  Card
 } from "react-bootstrap";
+import arrowDown from "../immagini/arrow-down.png";
 import "../css/Sections.css";
 
 class Sections extends React.Component {
@@ -15,15 +17,28 @@ class Sections extends React.Component {
         if (el instanceof Array) {
           const t = el.pop();
           return (
-            <DropdownButton
-              drop={"right"}
-              variant="custom"
-              title={t}
-              id="dropdown-button-drop-right"
-              key={"right" + index}
-            >
-              {this.generateItem(el, title + "/" + t)}
-            </DropdownButton>
+            <Accordion>
+              <Card className="cardAccordion">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  variant="link"
+                  eventKey="0"
+                  className="accordionMenu"
+                >
+                  {t}
+                  <img
+                    src={arrowDown}
+                    alt="arrowDown"
+                    className="arrowDown"
+                  />{" "}
+                </Accordion.Toggle>
+                <Accordion.Collapse className="menuBody" eventKey="0">
+                  <Card.Body>
+                    {this.generateItem(el, title + "/" + t)}
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+            </Accordion>
           );
         }
 
