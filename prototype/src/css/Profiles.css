@@ -1,8 +1,15 @@
-.profiles {
-  margin-top: 30px;
-  margin-bottom: 5px;
-  /* background-color: rgba(120, 170, 223, 1); */
-  /* border-radius: 0.25rem; */
+@media only screen and (min-device-width: 1224px) {
+  .profiles {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1224px) {
+  .profiles {
+    display: flexbox;
+    flex-direction: column;
+  }
 }
 
 button.btn.btn-flat {
@@ -13,7 +20,7 @@ button.btn.btn-flat {
 
 a.btn.btn-future {
   font-size: 12pt;
-  padding-left: 0px;
+  padding-left: 10px;
   padding-right: 0px;
   margin-right: 10px;
   color: black;

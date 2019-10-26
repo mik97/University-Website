@@ -1,5 +1,5 @@
 import React from "react";
-import Enterprise from "../fileSystem/enterprise.json";
+import Enterprise from "../fileSystem/Enterprise.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";

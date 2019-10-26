@@ -1,7 +1,17 @@
-.main {
-  background-color: #f3f2f5;
-  padding-left: 0px;
-  display: inline-block;
+@media only screen and (min-devicewidth: 1224px) {
+  .main {
+    background-color: #f3f2f5;
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1224px) {
+  .main {
+    background-color: #f3f2f5;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    display: flexbox;
+  }
 }
 
 .App-header {

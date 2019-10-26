@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Nav, Tab } from "react-bootstrap";
 import "../css/Content.css";
 import Sections from "./Sections";
-import NoProfile from "../fileSystem/noprofile.json";
+import NoProfile from "../fileSystem/NoProfile.json";
 
 class Content extends React.Component {
   whiteSpace(element) {

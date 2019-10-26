@@ -1,3 +1,30 @@
+@media only screen and (min-device-width: 1224px) {
+  .logo {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .logoAndSections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1224px) {
+  .logo {
+    width: 100%;
+  }
+  .logoAndSections {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.titleName {
+  text-align: center;
+}
+
 .container-fluid {
   font-family: "Segoe UI", sans-serif;
   color: white;
@@ -5,16 +32,15 @@
   line-height: 1.2;
   font-size: 24px;
   margin-top: 20px;
-}
-
-.logo {
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .paths {
   text-align: right;
   display: inline-flex;
   align-items: flex-end;
+  justify-content: flex-end;
+}
+.card-header {
+  color: black;
 }

@@ -12,13 +12,13 @@ import Docenti from "./Docenti";
 import Personale from "./Personale";
 import Imprese from "./Imprese";
 import Content from "./Content";
-import noprofile from "../fileSystem/noprofile.json";
-import future from "../fileSystem/future.json";
-import student from "../fileSystem/student.json";
-import graduate from "../fileSystem/graduate.json";
-import professor from "../fileSystem/professor.json";
-import staff from "../fileSystem/staff.json";
-import enterprise from "../fileSystem/enterprise.json";
+import noprofile from "../fileSystem/NoProfile.json";
+import future from "../fileSystem/Future.json";
+import student from "../fileSystem/Student.json";
+import graduate from "../fileSystem/Graduate.json";
+import professor from "../fileSystem/Professor.json";
+import staff from "../fileSystem/Staff.json";
+import enterprise from "../fileSystem/Enterprise.json";
 
 class App extends React.Component {
   addSimbol(element) {

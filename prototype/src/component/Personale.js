@@ -1,5 +1,5 @@
 import React from "react";
-import Staff from "../fileSystem/staff.json";
+import Staff from "../fileSystem/Staff.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";

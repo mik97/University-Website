@@ -1,5 +1,5 @@
 import React from "react";
-import Graduate from "../fileSystem/graduate.json";
+import Graduate from "../fileSystem/Graduate.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";

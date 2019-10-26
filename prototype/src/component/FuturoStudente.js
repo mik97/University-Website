@@ -1,6 +1,6 @@
 import React from "react";
 import Sections from "./Sections";
-import Future from "../fileSystem/future.json";
+import Future from "../fileSystem/Future.json";
 import { Row, Col, Tab } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
 import "../css/FuturoStudente.css";

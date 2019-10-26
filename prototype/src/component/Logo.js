@@ -10,16 +10,16 @@ class Logo extends React.Component {
   render() {
     return (
       <Container fluid style={{ paddingLeft: 0, paddingRight: 20 }}>
-        <Row>
-          <Col className="logo">
+        <div className="logoAndSections">
+          <div className="logo">
             <Link to="/">
               <Image className="logo" src={newLogo} alt="newLogo" />
             </Link>
-          </Col>
-          <Col className="paths">
+          </div>
+          <div className="paths">
             <Profiles />
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     );
   }

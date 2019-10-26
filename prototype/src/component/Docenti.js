@@ -1,5 +1,5 @@
 import React from "react";
-import Professor from "../fileSystem/professor.json";
+import Professor from "../fileSystem/Professor.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
