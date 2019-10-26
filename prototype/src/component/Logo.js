@@ -2,7 +2,7 @@ import React from "react";
 import newLogo from "../immagini/newLogo2.png";
 import "../css/Logo.css";
 import Image from "react-bootstrap/Image";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Profiles from "./Profiles";
 

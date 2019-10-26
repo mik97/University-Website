@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Nav, Tab } from "react-bootstrap";
+import { Row, Col, Nav, Tab, Container } from "react-bootstrap";
 import "../css/Content.css";
 import Sections from "./Sections";
 
@@ -80,13 +80,23 @@ class Content extends React.Component {
   isInternal(internal, name, el) {
     if (internal) {
       return (
-        <Nav.Link eventKey={el} href={this.props.type.urlName + name + el}>
+        <Nav.Link
+          className="linkContent"
+          variant="linkContent"
+          eventKey={el}
+          href={this.props.type.urlName + name + el}
+        >
           &ensp;&ensp;&ensp;&ensp;{el}
         </Nav.Link>
       );
     } else {
       return (
-        <Nav.Link eventKey={el} href={this.props.type.urlName + name + el}>
+        <Nav.Link
+          className="linkContent"
+          variant="linkContent"
+          eventKey={el}
+          href={this.props.type.urlName + name + el}
+        >
           {el}
         </Nav.Link>
       );
@@ -106,9 +116,7 @@ class Content extends React.Component {
 
         return (
           <Nav.Item>
-            <Nav.Link eventKey={last} disabled>
-              {last}
-            </Nav.Link>
+            <Nav.Link className="linkContent">{last}</Nav.Link>
             {this.getElements(newArray, name + last + "/", true)}
           </Nav.Item>
         );
@@ -160,22 +168,37 @@ class Content extends React.Component {
           cName={this.props.type.fileName}
         />
 
-        <Tab.Container
-          id="left-tabs-example"
-          defaultActiveKey={this.replaceWhiteSpace(this.props.location)}
-        >
-          <Row className="firstRow">
+        <Container className="sectionsContent">
+          <Tab.Container
+            id="left-tabs-example"
+            defaultActiveKey={this.replaceWhiteSpace(this.props.location)}
+          >
+            <div>
+              <h3 className="menuTitle">
+                {this.replaceWhiteSpace(this.props.root)}
+              </h3>
+              <Nav variant="linkContent" className="flex-column">
+                {this.selectType()}
+              </Nav>
+            </div>
+            <div className="elementContent">
+              <Tab.Content>{this.selectTypeContent()}</Tab.Content>
+            </div>
+            {/* <Row className="firstRow">
             <Col sm={3}>
-              <h3>{this.replaceWhiteSpace(this.props.root)}</h3>
-              <Nav variant="pills" className="flex-column">
+              <h3 className="menuTitle">
+                {this.replaceWhiteSpace(this.props.root)}
+              </h3>
+              <Nav variant="linkContent" className="flex-column">
                 {this.selectType()}
               </Nav>
             </Col>
             <Col sm={9}>
               <Tab.Content>{this.selectTypeContent()}</Tab.Content>
             </Col>
-          </Row>
-        </Tab.Container>
+          </Row> */}
+          </Tab.Container>
+        </Container>
       </div>
     );
   }

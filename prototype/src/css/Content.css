@@ -7,3 +7,34 @@
 .accordionContent {
   text-align: center;
 }
+
+.flex-column.nav.nav-linkContent {
+  background-color: #1b3b5d;
+  border-radius: 0.25rem;
+  width: max-content;
+}
+
+.linkContent,
+.linkContent:hover {
+  color: white;
+}
+
+.linkContent.active {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 170, 223, 1) 0%,
+    rgba(27, 59, 93, 1) 80%,
+    rgba(27, 59, 93, 1) 100%
+  );
+  border-radius: 0.25rem;
+}
+
+.sectionsContent {
+  display: inline-flex;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.elementContent {
+  margin-left: 60px;
+}

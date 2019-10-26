@@ -10,7 +10,7 @@ class ProfilesContent extends React.Component {
           return (
             <Card>
               <a
-                className="linkContent"
+                className="linkProfilesContent"
                 href={this.props.name + this.props.links[index]}
               >
                 <Card.Body>
