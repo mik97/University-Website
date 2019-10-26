@@ -21,12 +21,12 @@
       "Rubrica",
       "Area Riservata",
       "Help Desk",
-      "Servizi online"
+      "Servizi Online"
     ],
     "Borse di studio e Agevolazioni",
     [
       "Associazioni sindacali",
-      "Orario di lavoro",
+      "Orario lavoro",
       "Servizi amministrativi",
       "Rapporto di lavoro"
     ],
@@ -39,5 +39,15 @@
     ]
   ],
   "row1": ["Strutture", "Albo Ufficiale", "Servizi amministrativi"],
-  "row2": ["Orari Lavoro", "Area Riservata", "Help Desk"]
+  "row2": ["Orario Lavoro", "Area Riservata", "Help Desk"],
+  "link1": [
+    "Ateneo/Strutture",
+    "Ateneo/Albo%20ufficiale",
+    "Servizi%20e%20Opportunità/Rapporto%20di%20lavoro/Servizi%20amministrativi"
+  ],
+  "link2": [
+    "Servizi%20e%20Opportunità/Rapporto%20di%20lavoro/Orario%20lavoro",
+    "Servizi%20e%20Opportunità/Servizi%20Online/Area%20Riservata",
+    "Servizi%20e%20Opportunità/Servizi%20Online/Help%20Desk"
+  ]
 }

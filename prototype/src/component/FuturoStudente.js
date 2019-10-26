@@ -1,6 +1,6 @@
 import React from "react";
 import Sections from "./Sections";
-import Future from "../fileSystem/Future.json";
+import Future from "../fileSystem/future.json";
 import { Row, Col, Tab } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
 import "../css/FuturoStudente.css";
@@ -28,14 +28,22 @@ class FuturoStudente extends React.Component {
             <Row className="componentFuturo">
               <Col>
                 <Tab.Content className="content">
-                  <ProfilesContent titles={Future.row1} />
+                  <ProfilesContent
+                    titles={Future.row1}
+                    links={Future.link1}
+                    name={Future.urlName}
+                  />
                 </Tab.Content>
               </Col>
             </Row>
             <Row className="componentFuturo">
               <Col>
                 <Tab.Content className="content">
-                  <ProfilesContent titles={Future.row2} />
+                  <ProfilesContent
+                    titles={Future.row2}
+                    links={Future.link2}
+                    name={Future.urlName}
+                  />
                 </Tab.Content>
               </Col>
             </Row>

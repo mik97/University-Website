@@ -55,13 +55,23 @@
     "Come raggiungerci"
   ],
   "row1": [
-    "Corsi di laurea triennale",
-    "Corsi di laurea magistrale",
+    "Corsi di laurea triennale e magistrale",
+    "Verifica della preparazione iniziale",
     "Orientamento"
   ],
   "row2": [
     "Immatricolazioni",
     "Borse di studio e agevolazioni",
     "Trovare Alloggio"
+  ],
+  "link1": [
+    "Didattica/Offerta%20formativa/Corsi%20di%20laurea%20triennale%20e%20magistrale",
+    "Didattica/Verifica%20della%20preparazione%20iniziale",
+    "Didattica/Orientamento"
+  ],
+  "link2": [
+    "Servizi%20e%20Opportunità/Immatricolazioni/Iscrizioni%20Standard",
+    "Servizi%20e%20Opportunità/Borse%20di%20studio%20e%20Agevolazioni",
+    "Servizi%20e%20Opportunità/Vivere%20la%20citta/Trovare%20alloggio"
   ]
 }

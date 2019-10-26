@@ -6,6 +6,7 @@ import {
   Container,
   Accordion,
   Card,
+  Image,
   Button
 } from "react-bootstrap";
 import arrowDown from "../immagini/arrow-down.png";
@@ -35,15 +36,18 @@ class Sections extends React.Component {
                   className="accordionMenu"
                 >
                   {t}
-                  <img
+                  <Image
                     src={arrowDown}
                     alt="arrowDown"
                     className="arrowDown"
-                  />{" "}
+                  />
                 </Accordion.Toggle>
                 <Accordion.Collapse className="menuBody" eventKey="0">
                   <Card.Body>
-                    {this.generateItem(newArray, title + "/" + t)}
+                    {this.generateItem(
+                      newArray,
+                      title + "/" + t.replace("à", "a")
+                    )}
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -108,7 +112,7 @@ class Sections extends React.Component {
                 {this.getContents(this.props.imp, "Imprese e Territorio")}
                 {this.getContents(this.props.serv, "Servizi e Opportunità")}
               </Nav>
-              <div hidden={this.props.activate}>{this.props.name}</div>
+              <div>{this.props.name}</div>
             </Navbar.Collapse>
           </Navbar>
         </MediaQuery>

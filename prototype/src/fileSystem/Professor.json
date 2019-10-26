@@ -32,18 +32,28 @@
       "Rubrica",
       "Utility",
       "Help Desk",
-      "Servizi online"
+      "Servizi Online"
     ],
     "Disabilità e DSA",
     [
       "Programma di mobilità internazionle",
       "Stipulare e gestire accordi",
       "Tutorato e supporto alla mobilità",
-      "Bandi e concorsi",
+      "Bandi di mobilità",
       "Internazionale"
     ],
     "Borse di studio e Agevolazioni"
   ],
   "row1": ["Calendario Accademico", "Dipartimenti", "IRIS"],
-  "row2": ["Portale didattica", "Portale docenti", "Bandi e Concorsi"]
+  "row2": ["Portale didattica", "Portale docenti", "Bandi di mobilità"],
+  "link1": [
+    "Ateneo/Calendario%20Accademico",
+    "Didattica/Dipartimenti",
+    "Ricerca/IRIS"
+  ],
+  "link2": [
+    "Servizi%20e%20Opportunità/Servizi%20Online/Portale%20Didattica",
+    "Servizi%20e%20Opportunità/Servizi%20Online/Portale%20Docenti",
+    "Servizi%20e%20Opportunità/Internazionale/Bandi%20di%20mobilità"
+  ]
 }

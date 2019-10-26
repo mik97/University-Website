@@ -1,5 +1,5 @@
 import React from "react";
-import Enterprise from "../fileSystem/Enterprise.json";
+import Enterprise from "../fileSystem/enterprise.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -29,14 +29,22 @@ class Imprese extends React.Component {
             <Row className="componentFuturo">
               <Col>
                 <Tab.Content className="content">
-                  <ProfilesContent titles={Enterprise.row1} />
+                  <ProfilesContent
+                    titles={Enterprise.row1}
+                    links={Enterprise.link1}
+                    name={Enterprise.urlName}
+                  />
                 </Tab.Content>
               </Col>
             </Row>
             <Row className="componentFuturo">
               <Col>
                 <Tab.Content className="content">
-                  <ProfilesContent titles={Enterprise.row2} />
+                  <ProfilesContent
+                    titles={Enterprise.row2}
+                    links={Enterprise.link2}
+                    name={Enterprise.urlName}
+                  />
                 </Tab.Content>
               </Col>
             </Row>

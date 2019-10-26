@@ -1,0 +1,7 @@
+.linkContent {
+  color: #1b3b5d;
+}
+
+.linkContent:hover {
+  text-decoration: none;
+}

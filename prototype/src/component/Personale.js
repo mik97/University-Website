@@ -1,5 +1,5 @@
 import React from "react";
-import Staff from "../fileSystem/Staff.json";
+import Staff from "../fileSystem/staff.json";
 import Sections from "./Sections.js";
 import { Tab, Row, Col } from "react-bootstrap";
 import ProfilesContent from "./ProfilesContent";
@@ -29,14 +29,22 @@ class Personale extends React.Component {
             <Row className="componentFuturo">
               <Col>
                 <Tab.Content className="content">
-                  <ProfilesContent titles={Staff.row1} />
+                  <ProfilesContent
+                    titles={Staff.row1}
+                    links={Staff.link1}
+                    name={Staff.urlName}
+                  />
                 </Tab.Content>
               </Col>
             </Row>
             <Row className="componentFuturo">
               <Col>
                 <Tab.Content className="content">
-                  <ProfilesContent titles={Staff.row2} />
+                  <ProfilesContent
+                    titles={Staff.row2}
+                    links={Staff.link2}
+                    name={Staff.urlName}
+                  />
                 </Tab.Content>
               </Col>
             </Row>

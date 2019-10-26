@@ -25,7 +25,7 @@
     ["E-learning", "Mooc", "Tutorato", "Servizi a supporto della didattica"]
   ],
   "ric": [],
-  "imp": ["Eventi", "Stage e placement", "Career Day"],
+  "imp": ["Eventi", "Stage e Placement", "Career Day"],
   "serv": [
     [
       "Rinnovo iscrizioni",
@@ -40,13 +40,13 @@
       "Servizi di segreteria"
     ],
     [
-      "Portale didattica",
+      "Portale Didattica",
       "Posta elettronica di Ateneo",
       "Wi-Fi",
       "Utility",
       "Rubrica",
       "Help Desk",
-      "Servizi online"
+      "Servizi Online"
     ],
     "Borse di studio e Agevolazioni",
     [
@@ -77,5 +77,15 @@
     "Stage e Placement",
     "Programma mobilità internazionale",
     "Residenze, mense e punti ristoro"
+  ],
+  "link1": [
+    "Didattica/Dipartimenti",
+    "Servizi%20e%20Opportunità/Servizi%20Online/Portale%20Didattica",
+    "Servizi%20e%20Opportunità/Borse%20di%20studio%20e%20Agevolazioni"
+  ],
+  "link2": [
+    "Imprese%20e%20Territorio/Stage%20e%20Placement",
+    "Servizi%20e%20Opportunità/Internazionale/Programma%20mobilità%20internazionale",
+    "Servizi%20e%20Opportunità/Vivere%20la%20citta/Residenze,%20mense%20e%20punti%20ristoro"
   ]
 }

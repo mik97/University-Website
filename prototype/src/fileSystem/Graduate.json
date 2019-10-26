@@ -4,7 +4,7 @@
   "urlName": "/laureato/",
   "at": [],
   "did": [
-    "Dipatimenti",
+    "Dipartimenti",
     [
       "Corsi di laurea triennale e magistrale",
       "Dottorati",
@@ -24,12 +24,22 @@
       "Autocertificazioni e certificati",
       "Tasse e contributi",
       "Ritiro pergamene",
-      "Servizi di segreteria"
+      "Segreterie studenti"
     ],
     ["Tirocinio post-laurea", "Almalaurea", "Orientamento in uscita"],
 
     "ALUMNI"
   ],
   "row1": ["Dipartimenti", "Offerta Formativa", "Esami di stato"],
-  "row2": ["Ritiro pergamene", "Tirocinio post-laurea", "ALUMNI"]
+  "row2": ["Ritiro pergamene", "Tirocinio post-laurea", "ALUMNI"],
+  "link1": [
+    "Didattica/Dipartimenti",
+    "Didattica/Offerta%20formativa/Corsi%20di%20laurea%20triennale%20e%20magistrale",
+    "Servizi%20e%20Opportunità/Segreterie%20studenti/Esame%20di%20stato"
+  ],
+  "link2": [
+    "Servizi%20e%20Opportunità/Segreterie%20studenti/Ritiro%20pergamene",
+    "Servizi%20e%20Opportunità/Orientamento%20in%20uscita/Tirocinio%20post-laurea",
+    "Servizi%20e%20Opportunità/ALUMNI"
+  ]
 }

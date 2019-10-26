@@ -24,6 +24,7 @@ a.btn.btn-future {
   padding-right: 0px;
   margin-right: 10px;
   color: black;
+  border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(120, 170, 223, 1);
   display: inline-flex;

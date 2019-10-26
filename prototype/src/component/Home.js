@@ -4,7 +4,7 @@ import Tabs from "./Tabs";
 import "../css/Home.css";
 import Statistics from "./Statistics";
 import Sections from "./Sections";
-import NoProfile from "../fileSystem/NoProfile.json";
+import NoProfile from "../fileSystem/noprofile.json";
 import LinkUtili from "./LinkUtili";
 
 class Home extends React.Component {

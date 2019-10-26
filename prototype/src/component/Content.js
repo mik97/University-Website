@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col, Nav, Tab } from "react-bootstrap";
 import "../css/Content.css";
 import Sections from "./Sections";
-import NoProfile from "../fileSystem/NoProfile.json";
 
 class Content extends React.Component {
   whiteSpace(element) {
@@ -33,12 +32,46 @@ class Content extends React.Component {
     return element;
   }
 
-  getContent() {
-    switch (this.props.root) {
+  getContent(arr) {
+    return arr.map(el => {
+      if (el instanceof Array) {
+        return this.getContent(el);
+      }
+      return (
+        <Tab.Pane eventKey={el}>
+          <h2>{el}</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis
+            eget nunc lobortis mattis aliquam faucibus purus in.
+            <br />
+            <br />
+            Tortor at auctor urna nunc id cursus metus. Aliquam nulla facilisi
+            cras fermentum odio. Phasellus faucibus scelerisque eleifend donec.
+            Sagittis purus sit amet volutpat. Commodo nulla facilisi nullam
+            vehicula ipsum a arcu cursus. <br />
+            <br />
+            Tincidunt eget nullam non nisi est sit amet facilisis magna. Purus
+            ut faucibus pulvinar elementum integer enim. In ornare quam viverra
+            orci sagittis.
+          </p>
+        </Tab.Pane>
+      );
+    });
+  }
+
+  selectTypeContent() {
+    switch (this.replaceWhiteSpace(this.props.root)) {
       case "Ateneo":
-        return NoProfile.at.map((el, index) => {
-          return <Tab.Pane eventKey={el + index}>{"A" + index}</Tab.Pane>;
-        });
+        return this.getContent(this.props.type.at);
+      case "Didattica":
+        return this.getContent(this.props.type.did);
+      case "Ricerca":
+        return this.getContent(this.props.type.ric);
+      case "Imprese e Territorio":
+        return this.getContent(this.props.type.imp);
+      case "Servizi e Opportunità":
+        return this.getContent(this.props.type.serv);
       default:
         return;
     }
@@ -61,7 +94,7 @@ class Content extends React.Component {
   }
 
   getElements(arr, name, internal) {
-    return arr.map((el, index) => {
+    return arr.map(el => {
       if (el instanceof Array) {
         const last = el[el.length - 1];
         var newArray = [];
@@ -80,7 +113,11 @@ class Content extends React.Component {
           </Nav.Item>
         );
       }
-      return <Nav.Item>{this.isInternal(internal, name, el)}</Nav.Item>;
+      return (
+        <Nav.Item>
+          {this.isInternal(internal, name.replace("à", "a"), el)}
+        </Nav.Item>
+      );
     });
   }
 
@@ -127,7 +164,6 @@ class Content extends React.Component {
           id="left-tabs-example"
           defaultActiveKey={this.replaceWhiteSpace(this.props.location)}
         >
-          {/* {console.log(this.replaceWhiteSpace(this.props.location))} */}
           <Row className="firstRow">
             <Col sm={3}>
               <h3>{this.replaceWhiteSpace(this.props.root)}</h3>
@@ -136,7 +172,7 @@ class Content extends React.Component {
               </Nav>
             </Col>
             <Col sm={9}>
-              <Tab.Content>{this.getContent()}</Tab.Content>
+              <Tab.Content>{this.selectTypeContent()}</Tab.Content>
             </Col>
           </Row>
         </Tab.Container>
