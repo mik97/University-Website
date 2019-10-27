@@ -20,8 +20,14 @@
   padding-bottom: 30px;
   color: #1b3b5d;
 }
-
-.containerStatistics {
-  margin-top: 100px;
-  margin-bottom: 50px;
+@media only screen and (min-device-width: 1224px) {
+  .containerStatistics {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1224px) {
+  .containerStatistics {
+    display: none;
+  }
 }

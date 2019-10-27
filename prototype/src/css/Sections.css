@@ -70,6 +70,10 @@
   padding-right: 0px;
 }
 
+.menuCard.card {
+  padding-bottom: 1px;
+}
+
 .arrowDown {
   width: 16px;
   height: 16px;

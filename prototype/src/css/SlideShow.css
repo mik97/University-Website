@@ -1,5 +1,16 @@
-.carouselSlideShow {
-  display: -webkit-box;
+@media only screen and (min-device-width: 1224px) {
+  .carouselSlideShow {
+    display: -webkit-box;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1224px) {
+  .carouselSlideShow {
+    display: -webkit-box;
+    padding-top: 4px;
+  }
+  .carousel-caption {
+    text-align: center;
+  }
 }
 
 .item-image {

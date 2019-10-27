@@ -120,13 +120,10 @@ class Sections extends React.Component {
         {/* mobile */}
         <MediaQuery maxDeviceWidth={1224}>
           <Accordion>
-            <div>
+            <Card className="menuCard">
               <Accordion.Toggle
-                as={Button}
-                style={{
-                  background: "transparent",
-                  border: "transparent"
-                }}
+                as={Card.Header}
+                style={{ background: "#1b3b5d", color: "white" }}
                 eventKey="0"
               >
                 <img src={hamburger} alt="hamburger" className="hamburger" />{" "}
@@ -145,7 +142,7 @@ class Sections extends React.Component {
                   )}
                 </Accordion>
               </Accordion.Collapse>
-            </div>
+            </Card>
           </Accordion>
         </MediaQuery>
       </Container>

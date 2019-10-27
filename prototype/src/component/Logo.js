@@ -9,7 +9,7 @@ import Profiles from "./Profiles";
 class Logo extends React.Component {
   render() {
     return (
-      <Container fluid style={{ paddingLeft: 0, paddingRight: 20 }}>
+      <Container fluid>
         <div className="logoAndSections">
           <div className="logo">
             <Link to="/">
