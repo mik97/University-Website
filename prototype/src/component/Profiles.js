@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap";
 import MediaQuery from "react-responsive";
 import users from "../immagini/users.png";
+import { Link } from "react-router-dom";
 
 class Profiles extends React.Component {
   render() {
@@ -18,25 +19,35 @@ class Profiles extends React.Component {
         {/* desktop */}
         <MediaQuery minDeviceWidth={1224}>
           <ButtonGroup className="profiles">
-            <Button variant="future" href="/futuro-studente">
+            <Link className="futureP" to="/futuro-studente">
               Futuro Studente
-            </Button>
-            <Button variant="student" href="/studente">
+            </Link>
+            <Link className="studentP" to="/studente">
               Studente
-            </Button>
-            <Button variant="graduate" href="/laureato">
+            </Link>
+
+            <Link className="graduateP" to="/laureato">
               Laureato
-            </Button>
-            <Button variant="professor" href="/docenti">
+            </Link>
+
+            <Link className="professorP" to="/docenti">
               Docenti o Ricercatori
-            </Button>
-            <Button variant="staff" href="/personale">
+            </Link>
+
+            <Link className="staffP" to="/personale">
               Personale T/A
-            </Button>
-            <Button variant="enterprise" href="/entieimprese">
+            </Link>
+
+            <Link className="enterpriseP" to="/entieimprese">
               Enti e Imprese
+            </Link>
+
+            <Button
+              variant="international"
+              href="https://international.unicam.it"
+            >
+              International
             </Button>
-            <Button variant="international">International</Button>
           </ButtonGroup>
         </MediaQuery>
         {/* mobile */}
@@ -51,25 +62,49 @@ class Profiles extends React.Component {
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
                   <ButtonGroup className="profilesMobile">
-                    <Button variant="future" href="/futuro-studente">
-                      Futuro Studente
+                    <div className="profilesM">
+                      <Link className="futureP" to="/futuro-studente">
+                        Futuro Studente
+                      </Link>
+                    </div>
+
+                    <div className="profilesM">
+                      <Link className="studentP" to="/studente">
+                        Studente
+                      </Link>
+                    </div>
+
+                    <div className="profilesM">
+                      <Link className="graduateP" to="/laureato">
+                        Laureato
+                      </Link>
+                    </div>
+
+                    <div className="profilesM">
+                      <Link className="professorP" to="/docenti">
+                        Docenti o Ricercatori
+                      </Link>
+                    </div>
+
+                    <div className="profilesM">
+                      <Link className="staffP" to="/personale">
+                        Personale T/A
+                      </Link>
+                    </div>
+
+                    <div className="profilesM">
+                      <Link className="enterpriseP" to="/entieimprese">
+                        Enti e Imprese
+                      </Link>
+                    </div>
+
+                    <Button
+                      className="profilesM"
+                      variant="international"
+                      href="https://international.unicam.it"
+                    >
+                      International
                     </Button>
-                    <Button variant="student" href="/studente">
-                      Studente
-                    </Button>
-                    <Button variant="graduate" href="/laureato">
-                      Laureato
-                    </Button>
-                    <Button variant="professor" href="/docenti">
-                      Docenti o Ricercatori
-                    </Button>
-                    <Button variant="staff" href="/personale">
-                      Personale T/A
-                    </Button>
-                    <Button variant="enterprise" href="/entieimprese">
-                      Enti e Imprese
-                    </Button>
-                    <Button variant="international">International</Button>
                   </ButtonGroup>
                 </Card.Body>
               </Accordion.Collapse>

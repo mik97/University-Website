@@ -2,6 +2,12 @@
   margin-top: 30px;
   margin-bottom: 5px;
 }
+
+.profilesM {
+  /* margin-top: 30px; */
+  margin-bottom: 8px;
+}
+
 .profilesMobile {
   display: flex;
   flex-direction: column;
@@ -10,85 +16,110 @@
 button.btn.btn-flat {
   color: black;
   padding-left: 10px;
+  font-size: 12pt;
   align-content: center;
 }
 
-a.btn.btn-future {
-  font-size: 12pt;
-  padding-left: 10px;
-  padding-right: 0px;
-  margin-right: 10px;
+.futureP,
+.futureP:hover {
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(120, 170, 223, 1);
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
+  font-size: 12pt;
+  font-weight: normal;
+  align-content: center;
 }
 
-a.btn.btn-student {
-  font-size: 12pt;
-  padding-left: 10px;
-  margin-right: 10px;
+.studentP,
+.studentP:hover {
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(39, 155, 139, 1);
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
+  font-size: 12pt;
+  font-weight: normal;
+  align-content: center;
 }
 
-a.btn.btn-graduate {
-  font-size: 12pt;
-  padding-left: 10px;
-  text-align: center;
-
-  margin-right: 10px;
+.graduateP,
+.graduateP:hover {
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(191, 69, 69, 1);
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
+  font-size: 12pt;
+  font-weight: normal;
+  align-content: center;
 }
 
-a.btn.btn-professor {
-  font-size: 12pt;
-  padding-left: 10px;
-  text-align: center;
-  margin-right: 10px;
+.professorP,
+.professorP:hover {
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(145, 65, 132, 1);
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
+  font-size: 12pt;
+  font-weight: normal;
+  align-content: center;
 }
 
-a.btn.btn-staff {
-  font-size: 12pt;
-  padding-left: 10px;
-  text-align: center;
-  margin-right: 10px;
+.staffP,
+.staffP:hover {
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(155, 155, 63, 1);
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
+  font-size: 12pt;
+  font-weight: normal;
+  align-content: center;
 }
 
-a.btn.btn-enterprise {
-  font-size: 12pt;
-  padding-left: 10px;
-  text-align: center;
-  margin-right: 10px;
+.enterpriseP,
+.enterpriseP:hover {
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
   border-radius: 0rem;
   border-bottom: 2px solid;
   border-bottom-color: rgba(133, 125, 125, 1);
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
+  font-size: 12pt;
+  font-weight: normal;
+  align-content: center;
 }
 
 .btn.btn-international {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Nav, Tab, Container } from "react-bootstrap";
+import { Nav, Tab, Container } from "react-bootstrap";
 import "../css/Content.css";
 import Sections from "./Sections";
 
@@ -80,23 +80,13 @@ class Content extends React.Component {
   isInternal(internal, name, el) {
     if (internal) {
       return (
-        <Nav.Link
-          className="linkContent"
-          variant="linkContent"
-          eventKey={el}
-          href={this.props.type.urlName + name + el}
-        >
+        <Nav.Link className="linkContent" variant="linkContent" eventKey={el}>
           &ensp;&ensp;&ensp;&ensp;{el}
         </Nav.Link>
       );
     } else {
       return (
-        <Nav.Link
-          className="linkContent"
-          variant="linkContent"
-          eventKey={el}
-          href={this.props.type.urlName + name + el}
-        >
+        <Nav.Link className="linkContent" variant="linkContent" eventKey={el}>
           {el}
         </Nav.Link>
       );

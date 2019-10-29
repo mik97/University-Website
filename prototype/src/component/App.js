@@ -43,7 +43,7 @@ class App extends React.Component {
         );
       }
       return (
-        <Route path={profile.urlName + name + "/" + el}>
+        <Route path={profile.urlName + name + "/" + el} exact>
           <Content
             type={profile}
             root={
@@ -99,6 +99,7 @@ class App extends React.Component {
           <Route path={"/docenti"} exact component={Docenti} />
           <Route path={"/personale"} exact component={Personale} />
           <Route path={"/entieimprese"} exact component={Imprese} />
+
           {window.location.href.search(future.urlName) !== -1
             ? this.getAllRoute(future)
             : window.location.href.search(student.urlName) !== -1
